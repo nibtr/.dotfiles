@@ -16,8 +16,9 @@ These are my main configs:
 - i3 config
 - alacritty config
 - rofi config
+- custom scripts
 
-There are also some custom scripts and other configs (that I don't use often).
+There are also other configs (that I don't use often).
 
 ## Install
 
