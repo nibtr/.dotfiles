@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+
+# system
+alias shutdown='sudo shutdown now'
+alias reboot='sudo reboot'
+alias suspend='sudo pm-suspend'
+
+# ls
+alias ls='ls --color=auto'
+alias l='ls -l'
+alias ll='ls -lahF'
+alias lls='ls -lahFtr'
+alias la='ls -A'
+alias lc='ls -CF'
+
+# cp,mv,rm
+alias cp='cp -iv'
+alias mv='mv -iv'
+alias rm='rm -iv'
+
+# grep
+alias grep="grep -P -i --color=auto"
+
+# configs
+alias envcfg='vim $DOTFILES/zsh/.zshenv'
+alias zshcfg='vim $DOTFILES/zsh/.config/zsh/.zshrc'
+alias aliascfg='vim $DOTFILES/zsh/.config/zsh/aliases'
+alias alaccfg='vim $DOTFILES/alacritty/.config/alacritty/alacritty.toml'
+alias tmuxcfg='vim $DOTFILES/tmux/.config/tmux/tmux.conf'
+alias nvimcfg='vim $DOTFILES/nvim/.config/nvim'
+alias sshcfg='vim $DOTFILES/ssh/.ssh/config'
+alias zshsrc='source $DOTFILES/zsh/.config/zsh/.zshrc'
+
+# cd
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+
+# zsh stack cd
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+# tmux
+alias tmk='tmux kill-session -t'
+alias tma='tmux attach -t'
+alias tml='tmux list-sessions'
+alias tmd='tmux detach'
+
+# go
+alias gob="go build"
+alias gor="go run" 
+alias goc="go clean -i"
+#alias gta="go test ./..."       # go test all
+alias gi="go install"    # go install all
+
+# golang
+alias lzg='lazygit'
+alias lzd='lazydocker'
+
+# git
+alias gs='git status'
+alias ga='git add'
+alias gp='git pull'
+alias gpo='git pull origin'
+alias gP='git push'
+alias gPo='git push origin'
+alias gPuo'git push -u origin'
+alias gb='git branch'
+alias gco='git checkout'
+alias gl='git log --oneline'
+alias glol='git log --graph --abbrev-commit --oneline --decorate'
+alias gr='git remote'
+alias grs='git remote show'
+alias gd='git diff'
+alias gm='git merge'
+alias gst='git stash'
+alias gc='git commit'
+
+# apt
+alias au='sudo apt update'
+alias aU='sudo apt upgrade'
+alias aar='sudo apt autoremove'
+alias ase='apt search'
+alias ai='sudo apt install'
+alias al='apt list'
+alias ap='sudo apt purge'
+alias ar='sudo apt remove'
+alias ari='sudo apt reinstall'
+
+#vim
+alias vim='nvim'
+
+#fonts
+alias fonts='fc-cache -f -v'
+
+# others
+alias printpath='echo $PATH | tr ":" "\\n"'
+alias history='history | fzf'
+alias fe='thunar'
+alias open='xdg-open'
