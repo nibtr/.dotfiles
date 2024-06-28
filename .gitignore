@@ -3,6 +3,11 @@ known_hosts.old
 .p10k.zsh
 .zcompdump
 .zsh_history
+.zhistory
 agent-environment
 console-ninja
 bunx
+
+# binary/scripts
+tmux/.config/tmux/plugins/
+i3blocks/.config/i3blocks/scripts/
