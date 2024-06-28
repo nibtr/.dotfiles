@@ -1,6 +1,8 @@
 # .dotfiles
 
-The repo contains all of my dotfile configurations, allowing for backup and a consistent experience accross multiple machines.
+The repo contains all of my dotfile configurations, allowing for backup and a consistent experience accross multiple machines. The dotfiles are managed with [GNU stow](https://www.gnu.org/software/stow/).
+
+**Note**: The configurations are curated to fit my workflow and may not fit everyone else's.
 
 ## Prerequisites
 
@@ -46,3 +48,6 @@ stow -t ~ <folder_name>
 # or
 stow -nv -t ~ <folder_name>
 # to see what's going on
+```
+
+This will create a symlink from the dir in the repo to the specific location in $HOME.
