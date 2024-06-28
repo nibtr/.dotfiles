@@ -7,11 +7,19 @@ The repo contains all of my dotfile configurations, allowing for backup and a co
 - Git
 - GNU stow
 
-## Layout
+## Content
 
-The layout of this repo is divided into separate folders for their own configurations, e.g. tmux is for tmux's configuration files. Each folder "represents" the $HOME folder, which means when you're in a specific folder, consider it as your $HOME folder. For example, `.zshrc` lives in your $HOME folder, so in the `zsh` folder (now is your $HOME), there's a file `.zshrc`. The same goes with other files.
+These are my main configs:
 
-## Quickstart
+- neovim config
+- zsh config
+- i3 config
+- alacritty config
+- rofi config
+
+There are also some custom scripts and other configs (that I don't use often).
+
+## Install
 
 Run the following to stow every dir:
 
