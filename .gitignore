@@ -1,0 +1,8 @@
+known_hosts
+known_hosts.old
+.p10k.zsh
+.zcompdump
+.zsh_history
+agent-environment
+console-ninja
+bunx
