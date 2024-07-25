@@ -188,7 +188,8 @@ assign [class="Code"] $ws3
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
-exec --no-startup-id "xrandr --output HDMI-A-0 --mode 1920x1080 --rate 100.05; xrandr --output eDP --off"
+exec --no-startup-id xrandr --output HDMI-A-0 --mode 1920x1080
+exec --rate 100.05; xrandr --output eDP --off
 exec --no-startup-id xset r rate 200 35
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id nm-applet
