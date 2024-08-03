@@ -15,5 +15,17 @@
   {
     "key": "ctrl+j",
     "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "alt+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "actions.find"
   }
 ]
