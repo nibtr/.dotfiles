@@ -1,0 +1,139 @@
+{
+  // editor
+  "editor.tabSize": 2,
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontWeight": 400,
+  "editor.fontSize": 14,
+  "editor.fontLigatures": false,
+  "editor.smoothScrolling": false,
+  "editor.lineHeight": 1.4,
+  "window.zoomLevel": -0.25,
+  "editor.lineNumbers": "relative",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.cursorBlinking": "solid",
+  "editor.formatOnSave": true,
+  "editor.largeFileOptimizations": true,
+  "editor.minimap.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "files.associations": {
+    "*.mdoc": "markdown"
+  },
+
+  // vim
+  "vim.foldfix": true,
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-c>"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // formatter
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[templ]": {
+    "editor.defaultFormatter": "a-h.templ"
+  },
+  "tailwindCSS.includeLanguages": {
+    "templ": "html"
+  },
+  "emmet.includeLanguages": {
+    "templ": "html"
+  },
+
+  // AI
+  "codeium.enableConfig": {
+    "*": true,
+    "java": true,
+    "markdown": true,
+    "templ": true,
+    "ignore": true
+  },
+  "workbench.colorCustomizations": {
+    "[Tsoding Dark Theme]": {
+      "sideBar.border": "#353535",
+      "editor.background": "#1e1e1e",
+      "editorGutter.background": "#1e1e1e",
+      "editorLineNumber.foreground": "#4b4b4b"
+    },
+    "[Gruvbox Dark Hard]": {
+      "tab.activeBackground": "#333535"
+      // "editor.background": "#181818"
+    },
+    "[Visual Studio Dark]": {
+      "statusBar.background": "#282828",
+      "tab.inactiveBackground": "#333333",
+      "tab.activeBorderTop": "#377eef",
+      "editor.findMatchBorder": "#00f2ff",
+      // "editor.background": "#202224",
+      "sideBar.border": "#3a3a3a"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Default Dark Modern]": {
+      "strings": "#7db86b",
+      "comments": "#828282",
+      "numbers": "#da9363",
+      "functions": "#d4cc85",
+      "variables": "#eeeeee"
+    }
+  },
+
+  // telemetry
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
+  "extensions.autoUpdate": false,
+  "workbench.enableExperiments": false,
+
+  // others
+  // "console-ninja.featureSet": "Community",
+  "terminal.integrated.env.osx": {}
+}
