@@ -20,7 +20,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Column line
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = '120'
 
 -- Better split
 vim.opt.splitbelow = true
@@ -56,9 +56,6 @@ vim.opt.termguicolors = true
 
 -- Enable the sign column to prevent the screen from jumping
 vim.opt.signcolumn = 'yes'
-
--- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
 
 vim.opt.showmode = false
 
