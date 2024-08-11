@@ -14,6 +14,7 @@
   "editor.cursorBlinking": "solid",
   "editor.formatOnSave": true,
   "editor.largeFileOptimizations": true,
+  "editor.cursorSurroundingLines": 10,
   "editor.minimap.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
@@ -24,6 +25,9 @@
   // vim
   "vim.foldfix": true,
   "vim.leader": "<Space>",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "#a9dc7660",
+  "vim.highlightedyank.duration": 200,
   "vim.normalModeKeyBindings": [
     {
       "before": ["<C-d>"],
@@ -32,6 +36,10 @@
     {
       "before": ["<C-u>"],
       "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["leader", "d"],
+      "after": ["\"", "_", "d"]
     },
     {
       "before": ["g", "d"],
@@ -44,7 +52,7 @@
     {
       "before": ["g", "r"],
       "commands": ["editor.action.goToReferences"]
-    }
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
