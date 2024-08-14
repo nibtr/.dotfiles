@@ -26,7 +26,7 @@ return {
         mapping = cmp.mapping.preset.insert {
           ['<C-n>'] = cmp.mapping.select_next_item(),
           ['<C-p>'] = cmp.mapping.select_prev_item(),
-          ['<C-u>'] = cmp.mapping.scroll_docs(4), -- scroll up preview
+          ['<C-u>'] = cmp.mapping.scroll_docs(4),  -- scroll up preview
           ['<C-d>'] = cmp.mapping.scroll_docs(-4), -- scroll down preview
           ['<C-e>'] = cmp.mapping.close(),
           ['<CR>'] = cmp.mapping.confirm { select = true },

@@ -2,34 +2,34 @@ return {
   'tpope/vim-sleuth',
   { 'numToStr/Comment.nvim', opts = {} },
   -- which-key helps to remember keybindings
-  {
-    'folke/which-key.nvim',
-    event = 'VeryLazy',
-    init = function()
-      vim.o.timeout = true
-      vim.o.timeoutlen = 300
-
-      -- require('which-key').register {
-      --   ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
-      --   ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
-      --   ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
-      --   ['<leader>f'] = { name = '[F]ind', _ = 'which_key_ignore' },
-      --   ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
-      -- }
-      require('which-key').add({
-        { "<leader>c",  group = "[C]ode" },
-        { "<leader>c_", hidden = true },
-        { "<leader>d",  group = "[D]ocument" },
-        { "<leader>d_", hidden = true },
-        { "<leader>f",  group = "[F]ind" },
-        { "<leader>f_", hidden = true },
-        { "<leader>r",  group = "[R]ename" },
-        { "<leader>r_", hidden = true },
-        { "<leader>w",  group = "[W]orkspace" },
-        { "<leader>w_", hidden = true },
-      })
-    end,
-  },
+  -- {
+  --   'folke/which-key.nvim',
+  --   event = 'VeryLazy',
+  --   init = function()
+  --     vim.o.timeout = true
+  --     vim.o.timeoutlen = 300
+  --
+  --     -- require('which-key').register {
+  --     --   ['<leader>c'] = { name = '[C]ode', _ = 'which_key_ignore' },
+  --     --   ['<leader>d'] = { name = '[D]ocument', _ = 'which_key_ignore' },
+  --     --   ['<leader>r'] = { name = '[R]ename', _ = 'which_key_ignore' },
+  --     --   ['<leader>f'] = { name = '[F]ind', _ = 'which_key_ignore' },
+  --     --   ['<leader>w'] = { name = '[W]orkspace', _ = 'which_key_ignore' },
+  --     -- }
+  --     require('which-key').add({
+  --       { "<leader>c",  group = "[C]ode" },
+  --       { "<leader>c_", hidden = true },
+  --       { "<leader>d",  group = "[D]ocument" },
+  --       { "<leader>d_", hidden = true },
+  --       { "<leader>f",  group = "[F]ind" },
+  --       { "<leader>f_", hidden = true },
+  --       { "<leader>r",  group = "[R]ename" },
+  --       { "<leader>r_", hidden = true },
+  --       { "<leader>w",  group = "[W]orkspace" },
+  --       { "<leader>w_", hidden = true },
+  --     })
+  --   end,
+  -- },
   {
     'christoomey/vim-tmux-navigator',
     lazy = false,

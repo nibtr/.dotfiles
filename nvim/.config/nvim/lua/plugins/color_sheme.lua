@@ -12,7 +12,6 @@ return {
           transparency = true,
         },
       }
-      -- vim.cmd 'colorscheme rose-pine'
     end,
   },
   {
@@ -23,9 +22,8 @@ return {
     config = function()
       require('tokyonight').setup {
         style = 'moon',
-        transparent = true,
+        transparent = false,
       }
-      -- vim.cmd 'colorscheme tokyonight'
     end,
   },
   {
@@ -33,7 +31,6 @@ return {
     name = 'catppuccin',
     priority = 1000,
     config = function()
-      -- vim.cmd.colorscheme 'catppuccin'
     end,
   },
   {
@@ -53,7 +50,6 @@ return {
           folds = false,
         },
       }
-      vim.cmd 'colorscheme gruvbox'
     end,
   },
 }
