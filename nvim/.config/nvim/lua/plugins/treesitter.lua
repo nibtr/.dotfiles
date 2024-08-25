@@ -6,7 +6,7 @@ return {
     -- Autoinstall languages that are not installed
     auto_install = true,
     highlight = {
-      enable = false,
+      enable = true,
       disable = { 'lua', 'go', 'rust', 'c' },
       additional_vim_regex_highlighting = { 'ruby' },
     },
