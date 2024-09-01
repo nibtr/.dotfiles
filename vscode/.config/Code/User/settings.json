@@ -2,7 +2,8 @@
   // editor
   "editor.tabSize": 2,
   "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "JetBrains Mono",
+  // "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Hack Nerd Font",
   "editor.fontWeight": 400,
   "editor.fontSize": 14,
   "editor.fontLigatures": false,
@@ -16,6 +17,7 @@
   "editor.largeFileOptimizations": true,
   "editor.cursorSurroundingLines": 10,
   "editor.minimap.enabled": false,
+  "editor.rulers": [120],
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "files.associations": {
@@ -52,7 +54,7 @@
     {
       "before": ["g", "r"],
       "commands": ["editor.action.goToReferences"]
-    },
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -71,7 +73,7 @@
     }
   ],
 
-  // formatter
+  // language settings
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -84,7 +86,13 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
+  // "[rust]": {
+  //   "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  // },
   "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[templ]": {
@@ -143,5 +151,10 @@
 
   // others
   // "console-ninja.featureSet": "Community",
-  "terminal.integrated.env.osx": {}
+  "terminal.integrated.env.osx": {},
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ]
 }
