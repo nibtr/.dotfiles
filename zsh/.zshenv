@@ -15,6 +15,11 @@ export SAVEHIST=10000                   # Maximum events in history file
 # Dotfiles
 export DOTFILES="$HOME/.dotfiles"
 
+# ls colors
+LS_COLORS=$LS_COLORS:'di=1;34:'
+LS_COLORS=$LS_COLORS:'ln=0;33:' 
+export LS_COLORS
+
 # Cargo
 . "$HOME/.cargo/env"
 

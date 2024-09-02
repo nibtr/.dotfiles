@@ -21,7 +21,7 @@
     "command": "workbench.action.showCommands"
   },
   {
-    "key": "ctrl+p",
+    "key": "alt+p",
     "command": "workbench.action.quickOpen"
   },
   {
