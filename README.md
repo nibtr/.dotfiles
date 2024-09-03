@@ -13,7 +13,7 @@ The repo contains all of my dotfile configurations, allowing for backup and a co
 
 These are my main configs:
 
-- neovim config
+- [neovim config](https://github.com/jarng/.dotfiles/tree/main/nvim/.config/nvim)
 - zsh config
 - i3 config
 - alacritty config
