@@ -2,8 +2,8 @@
   // editor
   "editor.tabSize": 2,
   "editor.inlineSuggest.enabled": true,
-  // "editor.fontFamily": "JetBrains Mono",
-  "editor.fontFamily": "Hack Nerd Font",
+  "editor.fontFamily": "JetBrains Mono",
+  // "editor.fontFamily": "Hack Nerd Font",
   "editor.fontWeight": 400,
   "editor.fontSize": 14,
   "editor.fontLigatures": false,

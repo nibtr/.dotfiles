@@ -3,7 +3,7 @@ return {
     'stevearc/conform.nvim',
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
-      local conform = require 'conform'
+      local conform = require('conform')
 
       conform.setup {
         -- Disable formatting on save for certain filetypes

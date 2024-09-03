@@ -4,32 +4,28 @@ return {
     name = 'rose-pine',
     lazy = false,
     priority = 1000,
-    config = function()
-      require('rose-pine').setup {
-        variant = 'moon',
-        styles = {
-          italic = false,
-          transparency = true,
-        },
-      }
-    end,
+    opts = {
+      variant = 'moon',
+      styles = {
+        italic = false,
+        transparency = true,
+      },
+    },
   },
   {
     'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
-    opts = {},
-    config = function()
-      require('tokyonight').setup {
-        style = 'moon',
-        transparent = false,
-      }
-    end,
+    opts = {
+      transparent = false,
+      style = 'moon',
+    },
   },
   {
     'catppuccin/nvim',
     name = 'catppuccin',
     priority = 1000,
+    opts = {},
     config = function()
     end,
   },
@@ -38,18 +34,16 @@ return {
     lazy = false,
     name = 'gruvbox',
     priority = 1000,
-    config = function()
-      require('gruvbox').setup {
-        --transparent_mode = true,
-        contrast = 'hard',
-        italic = {
-          strings = false,
-          emphasis = false,
-          comments = false,
-          operators = false,
-          folds = false,
-        },
-      }
-    end,
+    opts = {
+      --transparent_mode = true,
+      contrast = 'hard',
+      italic = {
+        strings = false,
+        emphasis = false,
+        comments = false,
+        operators = false,
+        folds = false,
+      },
+    },
   },
 }
