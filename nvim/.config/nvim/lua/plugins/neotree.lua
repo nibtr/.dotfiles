@@ -15,7 +15,7 @@ return {
         enabled = true,
         leave_dirs_open = true,
       },
-      hijack_netrw_behavior = 'disabled',
+      -- hijack_netrw_behavior = 'disabled',
     },
     buffers = {
       follow_current_file = {

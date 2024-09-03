@@ -3,7 +3,10 @@ return {
   'tpope/vim-sleuth',
 
   -- 'gc' to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  { 'numToStr/Comment.nvim',    opts = {} },
+
+  -- highlight todos, notes, etc in comments
+  { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
   -- which-key helps to remember keybindings
   {
@@ -44,11 +47,11 @@ return {
     'windwp/nvim-ts-autotag',
     event = 'InsertEnter',
     config = function()
-      require('nvim-treesitter.configs').setup {
+      require('nvim-treesitter.configs').setup({
         autotag = {
           enable = true,
         },
-      }
+      })
     end,
   },
   {

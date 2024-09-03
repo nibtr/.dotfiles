@@ -1,7 +1,6 @@
 return {
   {
     'hrsh7th/nvim-cmp',
-    -- event = { 'BufReadPost, BufNewFile' },
     event = 'InsertEnter',
     dependencies = {
       {
@@ -15,8 +14,8 @@ return {
       local cmp = require('cmp')
       local luasnip = require('luasnip')
 
-      luasnip.config.setup {}
-      cmp.setup {
+      luasnip.config.setup({})
+      cmp.setup({
         snippet = {
           expand = function(args)
             luasnip.lsp_expand(args.body)
@@ -30,7 +29,7 @@ return {
           ['<C-d>'] = cmp.mapping.scroll_docs(-4), -- scroll down preview
           ['<C-e>'] = cmp.mapping.close(),
           ['<CR>'] = cmp.mapping.confirm { select = true },
-          ['<C-.>'] = cmp.mapping.complete {},
+          ['<C-y>'] = cmp.mapping.complete {},
           ['<C-l>'] = cmp.mapping(function()
             if luasnip.expand_or_locally_jumpable() then
               luasnip.expand_or_jump()
@@ -44,11 +43,16 @@ return {
           ['<C-c>'] = cmp.mapping.abort(),
         },
         sources = {
+          {
+            name = 'lazydev',
+            -- set group index to 0 to skip loading LuaLS completions as lazydev recommends it
+            group_index = 0,
+          },
           { name = 'nvim_lsp' },
           { name = 'path' },
           { name = 'luasnip' },
         },
-      }
+      })
     end,
   },
 }
