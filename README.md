@@ -2,7 +2,8 @@
 
 The repo contains all of my dotfile configurations, allowing for backup and a consistent experience accross multiple machines. The dotfiles are managed with [GNU stow](https://www.gnu.org/software/stow/).
 
-**Note**: The configurations are curated to fit my workflow and may not fit everyone else's.
+>[!NOTE]
+> The configurations are curated to fit my workflow and may not fit everyone else's.
 
 ## Prerequisites
 
