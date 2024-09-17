@@ -46,9 +46,4 @@ return {
       },
     },
   },
-  {
-    "m6vrm/gruber.vim",
-    lazy = false,
-    priority = 1000,
-  }
 }
