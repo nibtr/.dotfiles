@@ -1,7 +1,6 @@
 return {
   {
     'stevearc/conform.nvim',
-    -- event = { 'BufReadPre', 'BufNewFile' },
     cmd = { 'ConformInfo' },
     event = { 'BufWritePre' },
     keys = {
@@ -31,6 +30,7 @@ return {
           async = false,
         }
       end,
+
       -- You can use 'stop_after_first' to run the first available formatter from the list
       formatters_by_ft = {
         go = { "goimports", "gofmt" },

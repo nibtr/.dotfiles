@@ -25,7 +25,9 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
-  install = {},
+  install = {
+    colorscheme = { "gruber" }
+  },
   -- automatically check for plugin updates
   checker = { enabled = true },
   performance = {
@@ -46,4 +48,7 @@ require("lazy").setup({
       },
     },
   },
+  ui = {
+    backdrop = 60,
+  }
 })

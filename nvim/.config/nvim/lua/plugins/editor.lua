@@ -17,16 +17,14 @@ return {
       vim.o.timeoutlen = 300
 
       require('which-key').add({
-        { "<leader>c",  group = "[C]ode" },
-        { "<leader>c_", hidden = true },
-        { "<leader>d",  group = "[D]ocument" },
-        { "<leader>d_", hidden = true },
-        { "<leader>f",  group = "[F]ind" },
-        { "<leader>f_", hidden = true },
-        { "<leader>r",  group = "[R]ename" },
-        { "<leader>r_", hidden = true },
-        { "<leader>w",  group = "[W]orkspace" },
-        { "<leader>w_", hidden = true },
+        { "<leader>c", group = "[C]ode",        mode = { "n", "x" } },
+        { "<leader>d", group = "[D]ocument" },
+        { "<leader>f", group = "[F]ind" },
+        { "<leader>r", group = "[R]ename" },
+        { "<leader>w", group = "[W]orkspace" },
+        { "<leader>h", group = "Git [Hunk]",    mode = { "n", "v" } },
+        { "<leader>/", group = "Fuzzily search" },
+        { "<leader>p", group = "Netrw" },
       })
     end,
   },
@@ -40,8 +38,7 @@ return {
     'windwp/nvim-autopairs',
     event = 'InsertEnter',
     config = true,
-    -- use opts = {} for passing setup options
-    -- this is equalent to setup({}) function
+    -- opts = {}
   },
   {
     'windwp/nvim-ts-autotag',
@@ -64,11 +61,11 @@ return {
   },
 
   -- nvim status line
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    opts = {
-      thene = 'auto',
-    },
-  }
+  -- {
+  --   'nvim-lualine/lualine.nvim',
+  --   dependencies = { 'nvim-tree/nvim-web-devicons' },
+  --   opts = {
+  --     thene = 'auto',
+  --   },
+  -- }
 }
