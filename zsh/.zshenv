@@ -27,7 +27,7 @@ export LS_COLORS
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:/usr/local/go/bin
 PATH=$PATH:$HOME/go/bin
-# PATH=$PATH:/opt/homebrew/bin
+PATH=$PATH:/opt/homebrew/bin
 # BUN_INSTALL="$HOME/.bun"
 # PATH="$BUN_INSTALL/bin:$PATH"
 

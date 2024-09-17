@@ -19,7 +19,7 @@ alias mv='mv -iv'
 alias rm='rm -iv'
 
 # grep
-alias grep="grep -P -i --color=auto"
+# alias grep="grep -P -i --color=auto"
 
 # configs
 alias envcfg='vim $DOTFILES/zsh/.zshenv'
