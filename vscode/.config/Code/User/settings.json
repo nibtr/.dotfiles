@@ -111,7 +111,8 @@
     "java": true,
     "markdown": true,
     "templ": true,
-    "ignore": true
+    "ignore": true,
+    "javascript": false
   },
   "workbench.colorCustomizations": {
     "[Tsoding Dark Theme]": {

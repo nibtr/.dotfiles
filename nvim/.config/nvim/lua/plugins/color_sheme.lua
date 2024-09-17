@@ -35,7 +35,7 @@ return {
     name = 'gruvbox',
     priority = 1000,
     opts = {
-      --transparent_mode = true,
+      -- transparent_mode = true,
       contrast = 'hard',
       italic = {
         strings = false,
@@ -46,4 +46,9 @@ return {
       },
     },
   },
+  {
+    "m6vrm/gruber.vim",
+    lazy = false,
+    priority = 1000,
+  }
 }

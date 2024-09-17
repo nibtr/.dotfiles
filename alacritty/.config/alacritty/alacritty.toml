@@ -6,7 +6,7 @@ program = "/bin/zsh"
 [window]
 opacity = 1.0
 startup_mode = "Maximized"
-padding = { x = 16, y = 8 }
+padding = { x = 16, y = 4 }
 decorations_theme_variant = "Dark"
 
 [scrolling]
@@ -16,11 +16,11 @@ multiplier = 5
 background = "#181818"
 
 [font]
-# normal = { family = "HackNerdFont", style = "Regular" }
-normal = { family = "JetBrainsMono", style = "Regular" }
+# normal = { family = "HackNerd Font", style = "Regular" }
+normal = { family = "JetBrains Mono", style = "Regular" }
 # normal = { family = "Iosevka", style = "Regular" }
-size = 10.5
-offset = { x = 0, y = 1}
+size = 11.5
+offset = { x = 0, y = 0}
 
 [env]
 TERM = "xterm-256color"
