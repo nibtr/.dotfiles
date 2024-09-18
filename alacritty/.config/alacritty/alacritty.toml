@@ -17,9 +17,9 @@ background = "#181818"
 
 [font]
 # normal = { family = "HackNerd Font", style = "Regular" }
-normal = { family = "JetBrains Mono", style = "Regular" }
-# normal = { family = "Iosevka", style = "Regular" }
-size = 11.5
+# normal = { family = "JetBrains Mono", style = "Regular" }
+normal = { family = "Iosevka Nerd Font", style = "Regular" }
+size = 13
 offset = { x = 0, y = 0}
 
 [env]
