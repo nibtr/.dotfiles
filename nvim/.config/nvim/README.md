@@ -1,3 +1,14 @@
 # Neovim Setup
 
-![nvim-setup](https://github.com/user-attachments/assets/226654dd-a60a-4208-8fa3-3a99a83973e9)
+![image](https://github.com/user-attachments/assets/908ad0cb-1b33-4784-afa0-50177a5a3f17)
+
+## Main plugins
+
+- telescope
+- mason (for lsp)
+- treesitter
+- neotree
+- gitsigns
+- conform (formatting)
+- nvim-cmp (completion)
+- colorscheme is gruber
