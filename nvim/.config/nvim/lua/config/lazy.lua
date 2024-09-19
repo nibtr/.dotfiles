@@ -49,6 +49,6 @@ require("lazy").setup({
     },
   },
   ui = {
-    backdrop = 60,
+    -- backdrop = 60,
   }
 })

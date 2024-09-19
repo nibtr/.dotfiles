@@ -17,7 +17,6 @@ return {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = false,
       style = 'moon',
     },
   },
@@ -26,8 +25,6 @@ return {
     name = 'catppuccin',
     priority = 1000,
     opts = {},
-    config = function()
-    end,
   },
   {
     'ellisonleao/gruvbox.nvim',
