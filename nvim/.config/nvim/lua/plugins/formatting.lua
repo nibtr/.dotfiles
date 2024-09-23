@@ -7,7 +7,7 @@ return {
       {
         '<leader>cf',
         function()
-          require('conform').format { async = true, lsp_format = 'fallback' }
+          require('conform').format({ async = true, lsp_format = 'fallback' })
         end,
         mode = '',
         desc = '[C]ode [F]ormat buffer',

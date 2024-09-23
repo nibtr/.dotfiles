@@ -96,10 +96,26 @@ return {
               cargo = {
                 allFeatures = true,
               },
+              -- imports = {
+              --   group = {
+              --     enable = false,
+              --   },
+              -- },
+              -- completion = {
+              --   postfix = {
+              --     enable = false,
+              --   },
+              -- },
             },
           },
         },
+        templ = {},
+        marksman = {},
         ts_ls = {},
+        emmet_ls = {},
+        eslint = {},
+        bashls = {},
+        zls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},

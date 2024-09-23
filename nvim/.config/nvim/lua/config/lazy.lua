@@ -29,7 +29,10 @@ require("lazy").setup({
     colorscheme = { "gruber" }
   },
   -- automatically check for plugin updates
-  checker = { enabled = true },
+  checker = {
+    enabled = true,
+    frequency = 3600 * 24 -- 1 day
+  },
   performance = {
     cache = {
       enabled = true,

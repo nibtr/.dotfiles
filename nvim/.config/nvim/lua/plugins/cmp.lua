@@ -49,7 +49,7 @@ return {
           ['<C-p>'] = cmp.mapping.select_prev_item(),
           ['<C-u>'] = cmp.mapping.scroll_docs(4),  -- scroll up preview
           ['<C-d>'] = cmp.mapping.scroll_docs(-4), -- scroll down preview
-          ['<C-e>'] = cmp.mapping.close(),
+          -- ['<C-e>'] = cmp.mapping.close(),
           ['<CR>'] = cmp.mapping.confirm { select = true },
           ['<C-y>'] = cmp.mapping.complete {},
           ['<C-l>'] = cmp.mapping(function()
@@ -62,7 +62,7 @@ return {
               luasnip.jump(-1)
             end
           end, { 'i', 's' }),
-          ['<C-c>'] = cmp.mapping.abort(),
+          ['<C-e>'] = cmp.mapping.abort(),
         },
         sources = {
           {
