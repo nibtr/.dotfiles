@@ -94,50 +94,14 @@ return {
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
 			capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities())
 
-			local util = require("lspconfig.util")
+			-- local util = require("lspconfig.util")
 			-- setup lsp servers here
 			local servers = {
 				docker_compose_language_service = {},
-				clangd = {
-					-- cmd = { 'clangd' },
-					-- filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda', 'proto' },
-					-- root_dir = util.root_pattern('.clangd', '.clang-tidy', '.clang-format', 'compile_commands.json',
-					--   'compile_flags.txt', 'configure.ac', '.git'),
-					-- single_file_support = true,
-				},
-				pyright = {
-					-- cmd = { 'pyright-langserver', '--stdio' },
-					-- filetypes = { 'python' },
-					-- settings = {
-					--   python = {
-					--     analysis = {
-					--       autoSearchPaths = true,
-					--       diagnosticMode = 'openFilesOnly',
-					--       useLibraryCodeForTypes = true,
-					--     },
-					--   },
-					-- },
-					-- single_file_support = true,
-				},
-				gopls = {
-					-- cmd = { 'gopls' },
-					-- filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
-					-- single_file_support = true,
-					-- root_dir = util.root_pattern('go.work', 'go.mod', '.git'),
-					-- settings = {
-					--   gopls = {
-					--     completeUnimported = true,
-					--     analyses = {
-					--       unusedparams = true,
-					--     },
-					--   },
-					-- },
-				},
+				clangd = {},
+				pyright = {},
+				gopls = {},
 				rust_analyzer = {
-					-- cmd = { 'rust-analyzer' },
-					-- filetypes = { 'rust' },
-					-- root_dir = util.root_pattern('Cargo.toml', 'rust-project.json'),
-					-- single_file_support = true,
 					settings = {
 						["rust-analyzer"] = {
 							cargo = {
@@ -146,22 +110,7 @@ return {
 						},
 					},
 				},
-				tsserver = {
-					-- cmd = { "typescript-language-server", "--stdio" },
-					-- filetypes = {
-					-- 	"javascript",
-					-- 	"javascriptreact",
-					-- 	"javascript.jsx",
-					-- 	"typescript",
-					-- 	"typescriptreact",
-					-- 	"typescript.tsx",
-					-- },
-					-- init_options = {
-					-- 	hostInfo = "neovim",
-					-- },
-					-- root_dir = util.root_pattern("tsconfig.json", "package.json", "jsconfig.json", ".git"),
-					-- single_file_support = true,
-				},
+				ts_ls = {},
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes { ...},
@@ -188,10 +137,6 @@ return {
 				handlers = {
 					function(server_name)
 						local server = servers[server_name] or {}
-						if server_name == "tsserver" then
-							server_name = "ts_ls"
-						end
-
 						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
 						require("lspconfig")[server_name].setup(server)
 					end,

@@ -1,6 +1,6 @@
 -- Leader
-vim.g.mapleader = ' '
-vim.g.maplocalleader = '\\'
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 -- Nerdfont
 vim.g.have_nerd_font = true
@@ -20,14 +20,14 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Column line
-vim.opt.colorcolumn = '120'
+vim.opt.colorcolumn = "120"
 
 -- Better split
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Enable mouse mode
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 -- Case insensitive search
 vim.opt.ignorecase = true
@@ -43,7 +43,7 @@ vim.opt.updatetime = 50
 -- vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Preview substitution live as you type
-vim.opt.inccommand = 'split'
+vim.opt.inccommand = "split"
 
 -- Enalbe cursorline
 vim.opt.cursorline = true
@@ -55,7 +55,7 @@ vim.opt.scrolloff = 10
 vim.opt.termguicolors = true
 
 -- Enable the sign column to prevent the screen from jumping
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 vim.opt.showmode = false
 

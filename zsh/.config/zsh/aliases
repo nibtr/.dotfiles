@@ -100,3 +100,5 @@ alias printpath='echo $PATH | tr ":" "\\n"'
 alias history='history | fzf'
 alias fe='thunar'
 alias open='xdg-open'
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+

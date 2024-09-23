@@ -16,11 +16,11 @@ multiplier = 5
 background = "#181818"
 
 [font]
-# normal = { family = "HackNerdFont", style = "Regular" }
+# normal = { family = "Hack Nerd Font", style = "Regular" }
 normal = { family = "JetBrains Mono", style = "Regular" }
-# normal = { family = "Iosevka", style = "Regular" }
-size = 13.5
-offset = { x = 0, y = 1}
+# normal = { family = "Iosevka Nerd Font", style = "Regular" }
+size = 14
+offset = { x = 0, y = 0}
 
 [env]
 TERM = "xterm-256color"
