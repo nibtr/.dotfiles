@@ -110,6 +110,9 @@ return {
 						},
 					},
 				},
+				marksman = {},
+				bashls = {},
+				emmet_ls = {},
 				ts_ls = {},
 				eslint = {},
 				lua_ls = {

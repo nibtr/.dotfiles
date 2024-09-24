@@ -7,6 +7,7 @@ return {
 		highlight = {
 			enable = true,
 			-- disable = { 'lua', 'go', 'rust', 'c' },
+			---@diagnostic disable-next-line: unused-local
 			disable = function(lang, buf)
 				local max_filesize = 100 * 1024 -- 100 KB
 				local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
@@ -26,7 +27,10 @@ return {
 		---@diagnostic disable-next-line: missing-fields
 		require("nvim-treesitter.configs").setup(opts)
 		-- folding
-		-- vim.wo.foldmethod = 'expr'
-		-- vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+		vim.wo.foldmethod = "expr"
+		vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+		-- vim.opt.foldtext = "v:lua.vim.treesitter.foldtext()"
+		-- vim.opt.foldenable = false
+		vim.wo.foldlevel = 99
 	end,
 }

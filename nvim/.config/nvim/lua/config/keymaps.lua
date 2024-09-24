@@ -39,3 +39,8 @@ vim.keymap.set("n", "N", "Nzz", { silent = true })
 vim.keymap.set("n", "*", "*zz", { silent = true })
 vim.keymap.set("n", "#", "#zz", { silent = true })
 vim.keymap.set("n", "g*", "g*zz", { silent = true })
+
+-- "very magic" (less escaping needed) regexes by default
+vim.keymap.set("n", "?", "?\\v")
+vim.keymap.set("n", "/", "/\\v")
+vim.keymap.set("c", "%s/", "%sm/")
