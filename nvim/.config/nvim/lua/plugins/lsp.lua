@@ -111,6 +111,7 @@ return {
 					},
 				},
 				ts_ls = {},
+				eslint = {},
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes { ...},

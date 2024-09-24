@@ -66,3 +66,10 @@ vim.opt.showmode = false
 vim.opt.undofile = true
 
 -- vim.opt.hlsearch = true
+
+-- When opening a file with a command (like :e),
+-- don't suggest files like these:
+vim.opt.wildignore = ".hg,.svn,*~,*.png,*.jpg,*.gif,*.min.js,*.swp,*.o,vendor,dist,_site"
+
+-- Never ever make my terminal beep
+vim.opt.vb = true
