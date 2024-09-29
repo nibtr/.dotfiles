@@ -45,7 +45,7 @@ return {
         css = { 'prettierd' },
         json = { 'prettierd' },
         yaml = { 'prettierd' },
-        markdown = { 'prettierd' },
+        markdown = { 'prettierd', lsp_format = "fallback" },
         -- Use the "*" filetype to run formatters on all filetypes.
         ["*"] = { "codespell" },
         -- Use the "_" filetype to run formatters on filetypes that don't
