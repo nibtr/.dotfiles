@@ -2,6 +2,13 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = '\\'
 
+-- netrw
+vim.g.netrw_banner = 0
+vim.g.netrw_browse_split = 4 -- open in prior window
+vim.g.netrw_liststyle = 3    -- tree view
+
+vim.opt.wrap = false         -- disable text wrapping
+
 -- Nerdfont
 vim.g.have_nerd_font = true
 
@@ -51,6 +58,7 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 5
+vim.opt.sidescrolloff = 5
 
 -- Enable 24-bit color
 vim.opt.termguicolors = true
@@ -89,3 +97,6 @@ vim.opt.diffopt:append('iwhite')
 --- https://luppeng.wordpress.com/2020/10/10/when-to-use-each-of-the-git-diff-algorithms/
 vim.opt.diffopt:append('algorithm:histogram')
 vim.opt.diffopt:append('indent-heuristic')
+
+-- colorscheme
+vim.cmd.colorscheme("gruber")

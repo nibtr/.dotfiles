@@ -1,31 +1,31 @@
 return {
-  {
-    'rose-pine/neovim',
-    name = 'rose-pine',
-    lazy = false,
-    priority = 1000,
-    opts = {
-      variant = 'moon',
-      styles = {
-        italic = false,
-        transparency = true,
-      },
-    },
-  },
-  {
-    'folke/tokyonight.nvim',
-    lazy = false,
-    priority = 1000,
-    opts = {
-      style = 'moon',
-    },
-  },
-  {
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    priority = 1000,
-    opts = {},
-  },
+  -- {
+  --   'rose-pine/neovim',
+  --   name = 'rose-pine',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     variant = 'moon',
+  --     styles = {
+  --       italic = false,
+  --       transparency = true,
+  --     },
+  --   },
+  -- },
+  -- {
+  --   'folke/tokyonight.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     style = 'moon',
+  --   },
+  -- },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   priority = 1000,
+  --   opts = {},
+  -- },
   {
     'ellisonleao/gruvbox.nvim',
     lazy = false,

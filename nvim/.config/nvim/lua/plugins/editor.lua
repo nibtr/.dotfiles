@@ -17,14 +17,15 @@ return {
       vim.o.timeoutlen = 300
 
       require('which-key').add({
-        { "<leader>c", group = "[C]ode",        mode = { "n", "x" } },
+        { "<leader>c", group = "[C]ode",                 mode = { "n", "x" } },
         { "<leader>d", group = "[D]ocument" },
         { "<leader>f", group = "[F]ind" },
         { "<leader>r", group = "[R]ename" },
         { "<leader>w", group = "[W]orkspace" },
-        { "<leader>h", group = "Git [Hunk]",    mode = { "n", "v" } },
+        { "<leader>h", group = "Git [Hunk]",             mode = { "n", "v" } },
         { "<leader>/", group = "Fuzzily search" },
-        { "<leader>p", group = "Netrw" },
+        { "<leader>e", group = "[E]xplorer (netrw)" },
+        { "<leader>d", group = "[D]elete current buffer" },
       })
     end,
   },
@@ -51,14 +52,14 @@ return {
       })
     end,
   },
-  {
-    'iamcco/markdown-preview.nvim',
-    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
-    ft = { 'markdown' },
-    build = function()
-      vim.fn['mkdp#util#install']()
-    end,
-  },
+  -- {
+  --   'iamcco/markdown-preview.nvim',
+  --   cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+  --   ft = { 'markdown' },
+  --   build = function()
+  --     vim.fn['mkdp#util#install']()
+  --   end,
+  -- },
 
   -- nvim status line
   -- {

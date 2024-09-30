@@ -1,11 +1,15 @@
 -- clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
-vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
-vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
-vim.keymap.set('n', '<C-d>', '<C-d>zz')
-vim.keymap.set('n', '<C-u>', '<C-u>zz')
-vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
+-- reload config
+vim.keymap.set('n', '<leader><S-r>', ':source ~/.config/nvim/init.lua<CR>')
+
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")        -- move line up
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")        -- move line down
+vim.keymap.set('n', '<C-d>', '<C-d>zz')             -- cursor always middle when scroll down
+vim.keymap.set('n', '<C-u>', '<C-u>zz')             -- cursor always middle when scroll up
+-- vim.keymap.set('n', '<leader>e', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>e', '<cmd>:25Lex<CR>') -- open explorer
 vim.keymap.set('n', 'J', 'mzJ`z')
 vim.keymap.set('n', 'n', 'nzzzv')
 vim.keymap.set('n', 'N', 'Nzzzv')
@@ -55,5 +59,10 @@ vim.keymap.set('n', '/', '/\\v')
 vim.keymap.set('c', '%s/', '%sm/')
 
 -- remap buffers
-vim.keymap.set('n', '<leader>n', '<cmd>bnext<CR>')
-vim.keymap.set('n', '<leader>p', '<cmd>bprevious<CR>')
+vim.keymap.set('n', '<Tab>', '<cmd>bnext<CR>')       -- next buffer
+vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<CR>') -- previous buffer
+vim.keymap.set('n', '<leader>d', '<cmd>bd!<CR>')     -- delete buffer
+
+-- resize buffer
+vim.keymap.set('n', '<C-Left>', '<cmd>vertical resize +3<CR>')
+vim.keymap.set('n', '<C-Right>', '<cmd>vertical resize -3<CR>')

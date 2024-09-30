@@ -90,7 +90,7 @@ alias ar='sudo apt remove'
 alias ari='sudo apt reinstall'
 
 #vim
-alias vim='nvim'
+# alias vim='nvim'
 
 #fonts
 alias fonts='fc-cache -f -v'
