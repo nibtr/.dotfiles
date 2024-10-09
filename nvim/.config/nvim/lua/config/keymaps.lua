@@ -2,7 +2,7 @@
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- reload config
-vim.keymap.set('n', '<leader><S-r>', ':source ~/.config/nvim/init.lua<CR>')
+vim.keymap.set('n', '<leader><S-r>', '<cmd>:source ~/.config/nvim/init.lua<CR>')
 
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")        -- move line up
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")        -- move line down
