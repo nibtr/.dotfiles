@@ -4,16 +4,17 @@
 program = "/bin/zsh"
 
 [window]
-opacity = 1.0
+opacity = 0.9
 startup_mode = "Maximized"
 padding = { x = 16, y = 8 }
 decorations_theme_variant = "Dark"
+blur = true
 
 [scrolling]
 multiplier = 5
 
 [colors.primary]
-background = "#181818"
+background = "#1c1c1c"
 
 [font]
 # normal = { family = "Hack Nerd Font", style = "Regular" }

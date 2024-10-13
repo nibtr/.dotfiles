@@ -19,8 +19,8 @@ return {
 			require("which-key").add({
 				{ "<leader>c", group = "[C]ode" },
 				{ "<leader>c_", hidden = true },
-				{ "<leader>d", group = "[D]ocument" },
-				{ "<leader>d_", hidden = true },
+				-- { "<leader>d", group = "[D]ocument" },
+				-- { "<leader>d_", hidden = true },
 				{ "<leader>f", group = "[F]ind" },
 				{ "<leader>f_", hidden = true },
 				{ "<leader>r", group = "[R]ename" },

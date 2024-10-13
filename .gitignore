@@ -11,3 +11,4 @@ bunx
 # binary/scripts
 tmux/.config/tmux/plugins/
 i3blocks/.config/i3blocks/scripts/
+.zsh_sessions/

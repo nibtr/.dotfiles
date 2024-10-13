@@ -5,6 +5,13 @@ vim.g.maplocalleader = "\\"
 -- Nerdfont
 vim.g.have_nerd_font = true
 
+-- netrw
+vim.g.netrw_banner = 0
+vim.g.netrw_browse_split = 4 -- open in prior window
+vim.g.netrw_liststyle = 3 -- tree view
+
+vim.opt.wrap = false -- disable text wrapping
+
 -- Set tabs to 2 spaces
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
@@ -49,7 +56,8 @@ vim.opt.inccommand = "split"
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 5
+vim.opt.sidescrolloff = 5
 
 -- Enable 24-bit color
 vim.opt.termguicolors = true

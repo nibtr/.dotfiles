@@ -1,1 +1,1 @@
-vim.cmd.colorscheme("gruber")
+vim.cmd.colorscheme("cyberdream")
