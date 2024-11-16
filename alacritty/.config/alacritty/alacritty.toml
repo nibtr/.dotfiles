@@ -4,11 +4,11 @@
 program = "/bin/zsh"
 
 [window]
-opacity = 0.9
+opacity = 1
 startup_mode = "Maximized"
 padding = { x = 16, y = 8 }
 decorations_theme_variant = "Dark"
-blur = true
+# blur = true
 
 [scrolling]
 multiplier = 5
@@ -20,7 +20,7 @@ background = "#1c1c1c"
 # normal = { family = "Hack Nerd Font", style = "Regular" }
 normal = { family = "JetBrains Mono", style = "Regular" }
 # normal = { family = "Iosevka Nerd Font", style = "Regular" }
-size = 14.5
+size = 14
 offset = { x = 0, y = 0}
 
 [env]
