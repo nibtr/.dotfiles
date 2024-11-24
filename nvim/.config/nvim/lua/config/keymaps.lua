@@ -64,5 +64,5 @@ vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<CR>') -- previous buffer
 vim.keymap.set('n', '<leader>d', '<cmd>bd!<CR>')     -- delete buffer
 
 -- resize buffer
-vim.keymap.set('n', '<C-Left>', '<cmd>vertical resize +3<CR>')
-vim.keymap.set('n', '<C-Right>', '<cmd>vertical resize -3<CR>')
+vim.keymap.set('n', '<C-S-Left>', '<cmd>vertical resize +3<CR>')
+vim.keymap.set('n', '<C-S-Right>', '<cmd>vertical resize -3<CR>')
