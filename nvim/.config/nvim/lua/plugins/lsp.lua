@@ -21,7 +21,9 @@ return {
       { 'williamboman/mason.nvim', config = true }, -- NOTE: must be loaded before dependants
       'williamboman/mason-lspconfig.nvim',
       'WhoIsSethDaniel/mason-tool-installer.nvim',
+      -- Useful status updates for LSP.
       { 'j-hui/fidget.nvim',       opts = {} },
+      -- Allows extra capabilities provided by nvim-cmp
       'hrsh7th/cmp-nvim-lsp',
     },
     config = function()
@@ -85,6 +87,7 @@ return {
 
       -- local util = require('lspconfig.util')
       -- setup lsp servers here
+      -- ref: https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md
       local servers = {
         docker_compose_language_service = {},
         clangd = {},
