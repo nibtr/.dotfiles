@@ -9,7 +9,7 @@
   "editor.fontLigatures": false,
   "editor.smoothScrolling": false,
   "editor.lineHeight": 1.4,
-  "window.zoomLevel": -0.25,
+  "window.zoomLevel": -0.15,
   "editor.lineNumbers": "relative",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.cursorBlinking": "solid",
@@ -86,9 +86,9 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go"
   },
-  // "[rust]": {
-  //   "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  // },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -114,6 +114,8 @@
     "ignore": true,
     "javascript": false
   },
+
+  // themes
   "workbench.colorCustomizations": {
     "[Tsoding Dark Theme]": {
       "sideBar.border": "#353535",
@@ -153,7 +155,7 @@
   // others
   // "console-ninja.featureSet": "Community",
   "terminal.integrated.env.osx": {},
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Adwaita Dark",
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
