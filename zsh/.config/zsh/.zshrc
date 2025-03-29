@@ -68,3 +68,4 @@ _fzf_compgen_dir() {
 (( ! ${+functions[p10k]} )) || p10k finalize
 
 # [ -s "/Users/hieu/.bun/_bun" ] && source "/Users/hieu/.bun/_bun"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

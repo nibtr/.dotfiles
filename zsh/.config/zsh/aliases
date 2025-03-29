@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # system
-alias shutdown='sudo shutdown now'
+alias shutdown='sudo shutdown -h now'
 alias reboot='sudo reboot'
 alias suspend='sudo pm-suspend'
 
@@ -50,7 +50,7 @@ alias tmd='tmux detach'
 
 # go
 alias gob="go build"
-alias gor="go run" 
+alias gor="go run"
 alias goc="go clean -i"
 #alias gta="go test ./..."       # go test all
 alias gi="go install"    # go install all
