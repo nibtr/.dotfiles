@@ -119,6 +119,7 @@ return {
         eslint = {},
         bashls = {},
         zls = {},
+        jdtls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},

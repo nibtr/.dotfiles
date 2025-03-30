@@ -17,22 +17,11 @@ export DOTFILES="$HOME/.dotfiles"
 
 # ls colors
 LS_COLORS=$LS_COLORS:'di=1;34:'
-LS_COLORS=$LS_COLORS:'ln=0;33:' 
+LS_COLORS=$LS_COLORS:'ln=0;33:'
 export LS_COLORS
 
 # Cargo
 . "$HOME/.cargo/env"
-
-# PATH
-PATH=$PATH:$HOME/.local/bin
-PATH=$PATH:/usr/local/go/bin
-PATH=$PATH:$HOME/go/bin
-# PATH=$PATH:/opt/homebrew/bin
-# BUN_INSTALL="$HOME/.bun"
-# PATH="$BUN_INSTALL/bin:$PATH"
-
-# place this at bottom of PATH
-export PATH=$(echo $PATH | tr ':' '\n' | awk '!x[$0]++' | paste -sd':' -)
 
 # fzf
 # FZF_COLORS="bg+:-1,\
@@ -74,3 +63,18 @@ export MANPAGER='nvim +Man!'
 export XMODIFIERS=@im=fcitx
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
+
+# jdk-24
+export JAVA_HOME="$HOME/.local/share/jdk-24"
+
+# PATH
+PATH=$PATH:$HOME/.local/bin
+PATH=$PATH:/usr/local/go/bin
+PATH=$PATH:$HOME/go/bin
+# PATH=$PATH:/opt/homebrew/bin
+# BUN_INSTALL="$HOME/.bun"
+# PATH="$BUN_INSTALL/bin:$PATH"
+PATH=$PATH:$JAVA_HOME/bin
+
+# place this at bottom of PATH
+export PATH=$(echo $PATH | tr ':' '\n' | awk '!x[$0]++' | paste -sd':' -)
