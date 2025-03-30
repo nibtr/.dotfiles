@@ -65,7 +65,7 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 
 # jdk-24
-export JAVA_HOME="$HOME/.local/share/jdk-24"
+export JAVA_HOME="$HOME/.local/share/java/jdk-24"
 
 # PATH
 PATH=$PATH:$HOME/.local/bin
