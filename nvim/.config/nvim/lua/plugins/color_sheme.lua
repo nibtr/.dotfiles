@@ -52,5 +52,10 @@ return {
     "ayu-theme/ayu-vim",
     lazy = false,
     priority = 1000,
-  }
+  },
+  {
+    "Mofiqul/adwaita.nvim",
+    lazy = false,
+    priority = 1000,
+  },
 }

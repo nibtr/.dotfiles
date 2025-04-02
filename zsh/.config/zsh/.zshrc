@@ -33,7 +33,7 @@ setopt HIST_SAVE_NO_DUPS         # Do not write a duplicate event to the history
 setopt SHARE_HISTORY             # Share history between all sessions.
 setopt HIST_VERIFY               # Do not execute immediately upon history expansion.
 setopt AUTO_PUSHD
-setopt PUSHD_IGNORE_DUPS 
+setopt PUSHD_IGNORE_DUPS
 setopt PUSHD_SILENT
 setopt MENU_COMPLETE        # Automatically highlight first element of completion menu
 setopt AUTO_LIST            # Automatically list choices on ambiguous completion.
@@ -50,6 +50,9 @@ source $XDG_CONFIG_HOME/zsh/aliases
 
 # Start ssh-agent
 source $XDG_CONFIG_HOME/zsh/ssh_agent.zsh
+
+# LS_COLORS
+eval "$(dircolors -b)"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

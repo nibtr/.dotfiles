@@ -55,3 +55,6 @@ for _, pat in ipairs({ 'text', 'markdown', 'mail', 'gitcommit' }) do
     command = 'setlocal spell tw=72 colorcolumn=73',
   })
 end
+
+-- enable inline virtual diagnostic
+vim.diagnostic.config({ virtual_text = true })
