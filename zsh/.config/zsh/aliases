@@ -89,6 +89,12 @@ alias ap='sudo apt purge'
 alias ar='sudo apt remove'
 alias ari='sudo apt reinstall'
 
+# xbps-install
+alias xu='sudo xbps-install -Suv'
+alias xi='sudo xbps-install -Sv'
+alias xr='sudo xbps-remove -v'
+alias xq='xbps-query -v'
+
 #vim
 alias vim='nvim'
 
