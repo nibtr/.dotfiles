@@ -26,7 +26,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   install = {
-    colorscheme = { "gruber" }
+    colorscheme = { "kanagawa" }
   },
   -- automatically check for plugin updates
   checker = {

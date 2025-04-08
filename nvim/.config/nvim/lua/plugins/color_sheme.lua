@@ -1,31 +1,31 @@
 return {
-  -- {
-  --   'rose-pine/neovim',
-  --   name = 'rose-pine',
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     variant = 'moon',
-  --     styles = {
-  --       italic = false,
-  --       transparency = true,
-  --     },
-  --   },
-  -- },
-  -- {
-  --   'folke/tokyonight.nvim',
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     style = 'moon',
-  --   },
-  -- },
-  -- {
-  --   'catppuccin/nvim',
-  --   name = 'catppuccin',
-  --   priority = 1000,
-  --   opts = {},
-  -- },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    lazy = false,
+    priority = 1000,
+    opts = {
+      variant = 'moon',
+      styles = {
+        italic = false,
+        transparency = true,
+      },
+    },
+  },
+  {
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = 'moon',
+    },
+  },
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    priority = 1000,
+    opts = {},
+  },
   {
     'ellisonleao/gruvbox.nvim',
     lazy = false,
@@ -34,6 +34,7 @@ return {
     opts = {
       -- transparent_mode = true,
       contrast = 'hard',
+      -- bold = false,
       italic = {
         strings = false,
         emphasis = false,
@@ -42,11 +43,6 @@ return {
         folds = false,
       },
     },
-  },
-  {
-    "scottmckendry/cyberdream.nvim",
-    lazy = false,
-    priority = 1000,
   },
   {
     "ayu-theme/ayu-vim",
@@ -58,4 +54,13 @@ return {
     lazy = false,
     priority = 1000,
   },
+  {
+    "rebelot/kanagawa.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      commentStyle = { italic = false },
+      keywordStyle = { italic = false },
+    },
+  }
 }
