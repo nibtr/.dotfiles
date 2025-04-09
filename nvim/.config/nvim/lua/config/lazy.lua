@@ -29,7 +29,7 @@ require("lazy").setup({
 	-- automatically check for plugin updates
 	checker = {
 		enabled = true,
-		frequency = 3600 * 24,
+		frequency = 3600 * 24 * 7,
 	},
 	performance = {
 		cache = {

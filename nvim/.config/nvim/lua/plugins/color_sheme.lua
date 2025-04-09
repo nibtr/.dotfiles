@@ -63,11 +63,6 @@ return {
 		lazy = false,
 		priority = 1000,
 	},
-	-- {
-	-- 	"m6vrm/gruber.vim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- },
 	{
 		"behemothbucket/gruber-darker-theme.nvim",
 		lazy = false,

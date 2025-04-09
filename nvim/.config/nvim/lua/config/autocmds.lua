@@ -46,3 +46,6 @@ vim.api.nvim_create_autocmd("TermOpen", {
 		set.scrolloff = 0
 	end,
 })
+
+-- Enable vim inline diagnostics
+vim.diagnostic.config({ virtual_text = true })
