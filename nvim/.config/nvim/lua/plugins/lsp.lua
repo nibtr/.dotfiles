@@ -48,18 +48,7 @@ return {
 					map("K", vim.lsp.buf.hover, "Hover Documentation")
 
 					local client = vim.lsp.get_client_by_id(event.data.client_id)
-					-- if client and client.server_capabilities.documentHighlightProvider then
-					--   vim.api.nvim_create_autocmd({ 'CursorHold', 'CursorHoldI' }, {
-					--     buffer = event.buf,
-					--     callback = vim.lsp.buf.document_highlight,
-					--   })
-					--
-					--   vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
-					--     buffer = event.buf,
-					--     callback = vim.lsp.buf.clear_references,
-					--   })
-					-- end
-					if client and client.supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
+					if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
 						local highlight_augroup = vim.api.nvim_create_augroup("lsp-highlight", { clear = false })
 						vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
 							buffer = event.buf,
@@ -134,6 +123,23 @@ return {
 			}
 
 			local ensure_installed = vim.tbl_keys(servers or {})
+
+			local border = {
+				{ "🭽", "FloatBorder" },
+				{ "▔", "FloatBorder" },
+				{ "🭾", "FloatBorder" },
+				{ "▕", "FloatBorder" },
+				{ "🭿", "FloatBorder" },
+				{ "▁", "FloatBorder" },
+				{ "🭼", "FloatBorder" },
+				{ "▏", "FloatBorder" },
+			}
+			local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+			function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+				opts = opts or {}
+				opts.border = opts.border or border
+				return orig_util_open_floating_preview(contents, syntax, opts, ...)
+			end
 
 			require("mason").setup()
 			require("mason-lspconfig").setup({
