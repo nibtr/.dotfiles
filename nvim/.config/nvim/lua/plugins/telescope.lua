@@ -77,6 +77,8 @@ return {
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
         },
+        wrap_results = true,
+        fzf = {},
       },
     })
 
@@ -88,20 +90,36 @@ return {
       vim.keymap.set('n', keys, func, { desc = desc })
     end
 
+    -- [F]ind files
     map('<leader>fc', builtin.commands, '[F]ind [C]ommands')
     map('<leader>fh', builtin.help_tags, '[F]ind [H]elp')
     map('<leader>fk', builtin.keymaps, '[F]ind [K]eymaps')
     map('<leader>ff', builtin.find_files, '[F]ind [F]iles')
     map('<leader>fs', builtin.lsp_document_symbols, '[F]ind [S]ymbol')
     map('<leader>fw', builtin.grep_string, '[F]ind current [W]ord')
-    map('<leader>fg', builtin.live_grep, '[F]ind by [G]rep')
+    map('<leader>fG', builtin.live_grep, '[F]ind by [G]rep')
     map('<leader>fd', builtin.diagnostics, '[F]ind [D]iagnostics')
     map('<leader>fr', builtin.resume, '[F]ind [R]esume')
     map('<leader>f.', builtin.oldfiles, '[F]ind Recent Files ("." for repeat)')
     map('<leader>fb', builtin.buffers, '[F]ind existing buffers')
     map('<leader>fB', builtin.builtin, '[F]ind [B]uiltin')
+
+    -- [G]it related
+    map("<leader>fgf", builtin.git_files, '[G]it [F]iles')
+    map("<leader>fgb", builtin.git_bcommits, '[G]it [B]uffer Commits')
+    map("<leader>fgc", builtin.git_commits, '[G]it [C]ommits')
+    map("<leader>fgs", builtin.git_status, '[G]it [S]tatus')
+
+    -- change themes
     map('<leader>th', builtin.colorscheme, '[TH]eme Switcher')
 
+    -- find plugin packages
+    map("<space>fa", function()
+      ---@diagnostic disable-next-line: param-type-mismatch
+      builtin.find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") }
+    end, "[F]ind Plugin P[a]ckage")
+
+    -- fuzzy find in current buffer
     map('<leader>/', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
         winblend = 0, -- transparency (0-100)
@@ -109,6 +127,7 @@ return {
       })
     end, '[/] Fuzzily search in current buffer')
 
+    -- fuzzy find in open files
     map('<leader>f/', function()
       builtin.live_grep {
         grep_open_files = true,
@@ -116,9 +135,9 @@ return {
       }
     end, '[F]ind [/] in Open Files')
 
-    -- Shortcut for searching your Neovim configuration files
+    -- shortcut for searching your Neovim configuration files
     map('<leader>fn', function()
-      builtin.find_files { cwd = vim.fn.stdpath 'config' }
+      builtin.find_files { cwd = vim.fn.stdpath('config') }
     end, '[F]ind [N]eovim files')
   end,
 }

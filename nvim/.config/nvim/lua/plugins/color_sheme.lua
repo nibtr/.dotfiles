@@ -73,7 +73,7 @@ return {
       },
       overrides = function(colors)
         local theme = colors.theme
-        local palette = colors.palette
+        -- local palette = colors.palette
         local makeDiagnosticColor = function(color)
           local c = require("kanagawa.lib.color")
           return { fg = color, bg = c(color):blend(theme.ui.bg, 0.95):to_hex() }

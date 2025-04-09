@@ -66,3 +66,7 @@ vim.keymap.set('n', '<leader>d', '<cmd>bd!<CR>')     -- delete buffer
 -- resize buffer
 vim.keymap.set('n', '<C-S-Left>', '<cmd>vertical resize +3<CR>')
 vim.keymap.set('n', '<C-S-Right>', '<cmd>vertical resize -3<CR>')
+
+-- execution
+vim.keymap.set("n", "<leader>x", "<cmd>.lua<CR>", { desc = "Execute the current line" })
+vim.keymap.set("n", "<leader><leader>x", "<cmd>source %<CR>", { desc = "Execute the current file" })
