@@ -47,7 +47,9 @@ return {
 
           map('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
           map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-          map('K', vim.lsp.buf.hover, 'Hover Documentation')
+          map('K', function()
+            vim.lsp.buf.hover({ border = "single", max_width = 120 })
+          end, 'Hover Documentation')
 
           local client = vim.lsp.get_client_by_id(event.data.client_id)
           if client and client:supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
@@ -139,16 +141,6 @@ return {
       }
 
       local ensure_installed = vim.tbl_keys(servers or {})
-
-      -- border for hover menu
-      local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
-      ---@diagnostic disable-next-line: duplicate-set-field
-      function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
-        opts = opts or {}
-        opts.border = opts.border or "rounded"
-        return orig_util_open_floating_preview(contents, syntax, opts, ...)
-      end
-
       require('mason').setup()
       require('mason-lspconfig').setup({
         ensure_installed = ensure_installed,
