@@ -46,6 +46,9 @@ return {
     --   }):sync()
     -- end
 
+    local actions = require("telescope.actions")
+    local action_layout = require("telescope.actions.layout")
+
     require('telescope').setup({
       --  More info -> :help telescope.setup()`
       defaults = {
@@ -58,6 +61,14 @@ return {
           '_build',
           '.next',
         },
+        mappings = {
+          n = {
+            ["<M-p>"] = action_layout.toggle_preview
+          },
+          i = {
+            ["<M-p>"] = action_layout.toggle_preview,
+          },
+        }
       },
       pickers = {
         colorscheme = {
@@ -68,7 +79,7 @@ return {
           sort_mru = true,
           mappings = {
             i = {
-              ['<c-d>'] = 'delete_buffer',
+              ["<C-d>"] = actions.delete_buffer,
             },
           },
         },
@@ -97,7 +108,7 @@ return {
     map('<leader>ff', builtin.find_files, '[F]ind [F]iles')
     map('<leader>fs', builtin.lsp_document_symbols, '[F]ind [S]ymbol')
     map('<leader>fw', builtin.grep_string, '[F]ind current [W]ord')
-    map('<leader>fG', builtin.live_grep, '[F]ind by [G]rep')
+    map('<leader>fg', builtin.live_grep, '[F]ind by [G]rep')
     map('<leader>fd', builtin.diagnostics, '[F]ind [D]iagnostics')
     map('<leader>fr', builtin.resume, '[F]ind [R]esume')
     map('<leader>f.', builtin.oldfiles, '[F]ind Recent Files ("." for repeat)')
@@ -105,10 +116,10 @@ return {
     map('<leader>fB', builtin.builtin, '[F]ind [B]uiltin')
 
     -- [G]it related
-    map("<leader>fgf", builtin.git_files, '[G]it [F]iles')
-    map("<leader>fgb", builtin.git_bcommits, '[G]it [B]uffer Commits')
-    map("<leader>fgc", builtin.git_commits, '[G]it [C]ommits')
-    map("<leader>fgs", builtin.git_status, '[G]it [S]tatus')
+    map("<leader>gf", builtin.git_files, '[G]it [F]iles')
+    map("<leader>gb", builtin.git_bcommits, '[G]it [B]uffer Commits')
+    map("<leader>gc", builtin.git_commits, '[G]it [C]ommits')
+    map("<leader>gs", builtin.git_status, '[G]it [S]tatus')
 
     -- change themes
     map('<leader>th', builtin.colorscheme, '[TH]eme Switcher')
