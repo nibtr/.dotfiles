@@ -44,6 +44,7 @@ return {
 		opts = {
 			--transparent_mode = true,
 			contrast = "hard",
+			bold = false,
 			italic = {
 				strings = false,
 				emphasis = false,
@@ -83,11 +84,18 @@ return {
 							bg_gutter = "none",
 						},
 					},
+					wave = {
+						ui = {
+							float = {
+								bg = "#2A2A37",
+							},
+						},
+					},
 				},
 			},
 			overrides = function(colors)
 				local theme = colors.theme
-				local palette = colors.palette
+				-- local palette = colors.palette
 				local makeDiagnosticColor = function(color)
 					local c = require("kanagawa.lib.color")
 					return { fg = color, bg = c(color):blend(theme.ui.bg, 0.95):to_hex() }

@@ -42,6 +42,8 @@ return {
 		--     end,
 		--   }):sync()
 		-- end
+		local actions = require("telescope.actions")
+		local action_layout = require("telescope.actions.layout")
 
 		require("telescope").setup({
 			--  More info -> :help telescope.setup()`
@@ -55,6 +57,14 @@ return {
 					"_build",
 					".next",
 				},
+				mappings = {
+					n = {
+						["<M-p>"] = action_layout.toggle_preview,
+					},
+					i = {
+						["<M-p>"] = action_layout.toggle_preview,
+					},
+				},
 			},
 			pickers = {
 				colorscheme = {
@@ -65,7 +75,7 @@ return {
 					sort_mru = true,
 					mappings = {
 						i = {
-							["<c-d>"] = "delete_buffer",
+							["<C-d>"] = actions.delete_buffer,
 						},
 					},
 				},
@@ -74,6 +84,8 @@ return {
 				["ui-select"] = {
 					require("telescope.themes").get_dropdown(),
 				},
+				fzf = {},
+				wrap_results = true,
 			},
 		})
 
@@ -98,6 +110,11 @@ return {
 		map("<leader>fb", builtin.buffers, "[F]ind existing buffers")
 		map("<leader>fB", builtin.builtin, "[F]ind [B]uiltin")
 		map("<leader>th", builtin.colorscheme, "[TH]eme Switcher")
+
+		map("<leader>gf", builtin.git_files, "[G]it [F]iles")
+		map("<leader>gb", builtin.git_bcommits, "[G]it [B]uffer Commits")
+		map("<leader>gc", builtin.git_commits, "[G]it [C]ommits")
+		map("<leader>gs", builtin.git_status, "[G]it [S]tatus")
 
 		map("<leader>/", function()
 			builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
