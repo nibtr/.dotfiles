@@ -38,13 +38,28 @@ return {
 
       luasnip.config.setup({})
       cmp.setup({
+        performance = {
+          debounce = 0, -- default is 60ms
+          throttle = 0, -- default is 30ms
+        },
         snippet = {
           expand = function(args)
             luasnip.lsp_expand(args.body)
           end,
         },
+        window = {
+          completion = cmp.config.window.bordered(),
+          documentation = cmp.config.window.bordered(),
+        },
         completion = { completeopt = 'menu,menuone,noinsert' },
-        mapping = cmp.mapping.preset.insert {
+        matching = {
+          disallow_fuzzy_matching = true,
+          disallow_fullfuzzy_matching = true,
+          disallow_partial_fuzzy_matching = true,
+          disallow_partial_matching = false,
+          disallow_prefix_unmatching = true,
+        },
+        mapping = cmp.mapping.preset.insert({
           ['<C-n>'] = cmp.mapping.select_next_item(),
           ['<C-p>'] = cmp.mapping.select_prev_item(),
           ['<C-u>'] = cmp.mapping.scroll_docs(4),  -- scroll up preview
@@ -63,7 +78,7 @@ return {
             end
           end, { 'i', 's' }),
           ['<C-e>'] = cmp.mapping.abort(),
-        },
+        }),
         sources = {
           {
             name = 'lazydev',
