@@ -12,10 +12,22 @@ return {
   {
     'folke/which-key.nvim',
     event = 'VeryLazy',
-    init = function()
+    config = function()
       vim.o.timeout = true
       vim.o.timeoutlen = 300
-
+      require("which-key").setup({
+        plugins = {
+          marks = false,
+          operators = false,
+          windows = false,
+          nav = false,
+        },
+        win = {
+          padding = { 0, 1 },
+          title = false,
+          border = "none",
+        },
+      })
       require('which-key').add({
         { "<leader>c", group = "[C]ode",                 mode = { "n", "x" } },
         { "<leader>d", group = "[D]ocument" },
