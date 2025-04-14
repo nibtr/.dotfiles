@@ -88,7 +88,7 @@ return {
           { name = 'nvim_lsp' },
           { name = 'path' },
           { name = 'luasnip' },
-          { name = "codeium" }
+          { name = "supermaven" }
         },
       })
     end,
