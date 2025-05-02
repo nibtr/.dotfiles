@@ -67,6 +67,8 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.showmode = false
 
+-- vim.o.winborder = "single"
+
 -- Sync system clipboard
 -- vim.opt.clipboard = 'unnamedplus'
 

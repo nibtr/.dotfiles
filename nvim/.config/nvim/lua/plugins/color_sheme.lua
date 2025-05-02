@@ -1,46 +1,10 @@
 return {
-	-- {
-	-- 	"scottmckendry/cyberdream.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {
-	-- 		transparent = true,
-	-- 	},
-	-- },
-	-- {
-	-- 	"rose-pine/neovim",
-	-- 	name = "rose-pine",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {
-	-- 		variant = "moon",
-	-- 		styles = {
-	-- 			italic = false,
-	-- 			transparency = true,
-	-- 		},
-	-- 	},
-	-- },
-	-- {
-	-- 	"folke/tokyonight.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	opts = {
-	-- 		transparent = false,
-	-- 		style = "moon",
-	-- 	},
-	-- },
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
-		opts = {},
-		config = function() end,
-	},
+	{ "bluz71/vim-moonfly-colors", name = "moonfly" },
 	{
 		"ellisonleao/gruvbox.nvim",
 		lazy = false,
-		name = "gruvbox",
 		priority = 1000,
+		name = "gruvbox",
 		opts = {
 			--transparent_mode = true,
 			contrast = "hard",
@@ -52,27 +16,15 @@ return {
 				operators = false,
 				folds = false,
 			},
+			overrides = {
+				LspReferenceRead = { bg = "#504945" },
+			},
 		},
 	},
-	-- {
-	-- 	"Mofiqul/adwaita.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- },
-	-- {
-	-- 	"ayu-theme/ayu-vim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- },
-	-- {
-	-- 	"behemothbucket/gruber-darker-theme.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- },
 	{
 		"rebelot/kanagawa.nvim",
-		lazy = false,
-		priority = 1000,
+		-- lazy = false,
+		-- priority = 1000,
 		opts = {
 			compile = true,
 			commentStyle = { italic = false },
@@ -114,6 +66,9 @@ return {
 					PmenuSbar = { bg = theme.ui.bg_m1 },
 					PmenuThumb = { bg = theme.ui.bg_p2 },
 
+					NormalFloat = { bg = "none" },
+					FloatBorder = { bg = "none" },
+					FloatTitle = { bg = "none" },
 					-- NormalFloat = { fg = theme.ui.float.fg, bg = theme.ui.float.bg },
 					-- ColorColumn = { bg = theme.ui.float.bg },
 				}
