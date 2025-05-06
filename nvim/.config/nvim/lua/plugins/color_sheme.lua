@@ -42,6 +42,9 @@ return {
         operators = false,
         folds = false,
       },
+      overrides = {
+        LspReferenceRead = { bg = "#504945" },
+      },
     },
   },
   -- {

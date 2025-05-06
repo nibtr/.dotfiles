@@ -43,7 +43,7 @@ return {
         javascriptreact = { 'prettierd' },
         html = { 'prettierd' },
         css = { 'prettierd' },
-        json = { 'prettierd' },
+        json = { 'jq' },
         yaml = { 'prettierd' },
         markdown = { 'prettierd', lsp_format = "fallback" },
         c = { "clang_format" },
