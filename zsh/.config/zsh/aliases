@@ -43,10 +43,11 @@ alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 # tmux
-alias tmk='tmux kill-session -t'
+# alias tmk='tmux kill-session -t'
 alias tma='tmux attach -t'
 alias tml='tmux list-sessions'
 alias tmd='tmux detach'
+alias tmks='tmux kill-server'
 
 # go
 alias gob="go build"
