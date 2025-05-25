@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# --- Custom script to kill multiple tmux sessions---
+#
 # check if tmux is running at all
 if ! tmux ls &> /dev/null; then
     echo "No tmux server running."

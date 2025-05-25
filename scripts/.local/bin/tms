@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# --- Custom script to find a directory and open a tmux session to that directory ---
+
 # select directory
 if [[ $# -eq 1 ]]; then
     selected=$1
@@ -26,7 +28,7 @@ if ! tmux has-session -t=$selected_name 2> /dev/null; then
     tmux new-session -ds $selected_name -c $selected
 fi
 
-# tttach or switch to session
+# attach or switch to session
 if [[ -z $TMUX ]]; then
     tmux attach-session -t $selected_name
 else
