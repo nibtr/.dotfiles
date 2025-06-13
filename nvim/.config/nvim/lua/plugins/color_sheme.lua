@@ -66,13 +66,19 @@ return {
 					PmenuSbar = { bg = theme.ui.bg_m1 },
 					PmenuThumb = { bg = theme.ui.bg_p2 },
 
-					NormalFloat = { bg = "none" },
-					FloatBorder = { bg = "none" },
-					FloatTitle = { bg = "none" },
+					-- NormalFloat = { bg = "none" },
+					-- FloatBorder = { bg = "none" },
+					-- FloatTitle = { bg = "none" },
 					-- NormalFloat = { fg = theme.ui.float.fg, bg = theme.ui.float.bg },
 					-- ColorColumn = { bg = theme.ui.float.bg },
 				}
 			end,
 		},
+	},
+
+	{
+		"scottmckendry/cyberdream.nvim",
+		lazy = false,
+		priority = 1000,
 	},
 }

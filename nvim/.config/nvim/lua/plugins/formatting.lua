@@ -43,7 +43,7 @@ return {
 				javascriptreact = { "prettierd" },
 				html = { "prettierd" },
 				css = { "prettierd" },
-				json = { "deno_fmt" },
+				json = { "jq" },
 				yaml = { "prettierd" },
 				markdown = { "prettierd" },
 				-- Use the "*" filetype to run formatters on all filetypes.

@@ -5,5 +5,8 @@ return {
 			require("supermaven-nvim").setup({})
 		end,
 	},
+	{
+		"folke/zen-mode.nvim",
+		opts = {},
+	},
 }
-

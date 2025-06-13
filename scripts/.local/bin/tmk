@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# --- Custom script to kill multiple tmux sessions---
+#
+# check if tmux is running at all
+if ! tmux ls &> /dev/null; then
+    echo "No tmux server running."
+    exit 0
+fi
+
+# select multiple sessions to kill
+sessions=$(tmux list-sessions -F '#S' | fzf -m --bind tab:toggle --layout=reverse --prompt="Kill sessions: ")
+
+# exit if nothing selected
+if [[ -z $sessions ]]; then
+    exit 0
+fi
+
+# kill selected sessions
+while IFS= read -r session; do
+    tmux kill-session -t "$session" && echo "Killed session: $session"
+done <<< "$sessions"
+

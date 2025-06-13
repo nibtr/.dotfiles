@@ -66,3 +66,8 @@ vim.keymap.set("n", "<leader>tm", function()
 	vim.wo.winfixheight = true
 	vim.cmd.term()
 end)
+
+-- Show diagnostic in float menu
+vim.keymap.set("n", "J", function()
+	vim.diagnostic.open_float({ border = "single" })
+end, { desc = "Line diagnostics" })
