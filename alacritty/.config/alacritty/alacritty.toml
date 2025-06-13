@@ -1,7 +1,7 @@
 # import = ["~/.config/alacritty/themes/themes/wombat.toml"]
 
-[shell]
-program = "/bin/zsh"
+[terminal]
+shell = "/bin/zsh"
 
 [window]
 opacity = 1
