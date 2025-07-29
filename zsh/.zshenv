@@ -65,7 +65,10 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 
 # jdk-24
-export JAVA_HOME="$HOME/.local/share/java/jdk-24"
+export JAVA_HOME="$HOME/.local/share/java"
+
+# maven
+export MAVEN_HOME="$HOME/.local/share/maven"
 
 # PATH
 PATH=$PATH:$HOME/.local/bin
@@ -74,7 +77,8 @@ PATH=$PATH:$HOME/go/bin
 # PATH=$PATH:/opt/homebrew/bin
 # BUN_INSTALL="$HOME/.bun"
 # PATH="$BUN_INSTALL/bin:$PATH"
-PATH=$PATH:$JAVA_HOME/bin
+PATH=$JAVA_HOME/bin:$PATH
+PATH=$MAVEN_HOME/bin:$PATH
 
 # place this at bottom of PATH
 export PATH=$(echo $PATH | tr ':' '\n' | awk '!x[$0]++' | paste -sd':' -)

@@ -6,7 +6,7 @@ shell = { program = "/bin/zsh" }
 [window]
 opacity = 1.0
 startup_mode = "Maximized"
-padding = { x = 16, y = 4 }
+padding = { x = 12, y = 4 }
 decorations_theme_variant = "Dark"
 
 [scrolling]

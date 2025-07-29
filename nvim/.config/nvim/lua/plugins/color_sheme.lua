@@ -20,12 +20,13 @@ return {
   --     style = 'moon',
   --   },
   -- },
-  -- {
-  --   'catppuccin/nvim',
-  --   name = 'catppuccin',
-  --   priority = 1000,
-  --   opts = {},
-  -- },
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin',
+    -- lazy = false,
+    -- priority = 1000,
+    opts = {},
+  },
   {
     'ellisonleao/gruvbox.nvim',
     lazy = false,
@@ -59,8 +60,8 @@ return {
   -- },
   {
     "rebelot/kanagawa.nvim",
-    -- lazy = false,
-    -- priority = 1000,
+    lazy = false,
+    priority = 1000,
     opts = {
       compile = true,
       commentStyle = { italic = false },
@@ -95,9 +96,9 @@ return {
 
           -- NormalFloat = { bg = palette.sumiInk4 },
           -- ColorColumn = { bg = palette.sumiInk4 },
-          NormalFloat = { bg = "none" },
-          FloatBorder = { bg = "none" },
-          FloatTitle = { bg = "none" },
+          -- NormalFloat = { bg = "none" },
+          -- FloatBorder = { bg = "none" },
+          -- FloatTitle = { bg = "none" },
         }
       end,
     },

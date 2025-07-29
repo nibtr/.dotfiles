@@ -95,6 +95,7 @@ return {
         clangd = {},
         pyright = {},
         gopls = {},
+        ocamllsp = {},
         rust_analyzer = {
           settings = {
             ['rust-analyzer'] = {

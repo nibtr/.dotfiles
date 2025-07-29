@@ -9,7 +9,17 @@ return {
   opts = {
     filesystem = {
       filtered_items = {
+        visible = true,
         hide_dotfiles = false,
+        hide_gitignored = true,
+        hide_by_name = {
+          -- ".git",
+          -- ".github",
+        },
+        never_show = {
+          ".git",
+          ".github",
+        }
       },
       follow_current_file = {
         enabled = true,

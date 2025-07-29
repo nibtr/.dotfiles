@@ -48,6 +48,8 @@ return {
         markdown = { 'prettierd', lsp_format = "fallback" },
         c = { "clang_format" },
         cpp = { "clang_format" },
+        java = { "google-java-format" },
+        ocaml = { "ocamlformat" },
         -- Use the "*" filetype to run formatters on all filetypes.
         ["*"] = { "codespell" },
         -- Use the "_" filetype to run formatters on filetypes that don't
