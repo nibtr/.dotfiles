@@ -46,6 +46,7 @@ return {
 				json = { "jq" },
 				yaml = { "prettierd" },
 				markdown = { "prettierd" },
+				ocaml = { "ocamlformat" },
 				-- Use the "*" filetype to run formatters on all filetypes.
 				["*"] = { "codespell" },
 				-- Use the "_" filetype to run formatters on filetypes that don't

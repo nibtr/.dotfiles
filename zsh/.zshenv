@@ -17,17 +17,22 @@ export DOTFILES="$HOME/.dotfiles"
 
 # ls colors
 LS_COLORS=$LS_COLORS:'di=1;34:'
-LS_COLORS=$LS_COLORS:'ln=0;33:' 
+LS_COLORS=$LS_COLORS:'ln=0;33:'
 export LS_COLORS
 
 # Cargo
 . "$HOME/.cargo/env"
+
+# Brew
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # PATH
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:/usr/local/go/bin
 PATH=$PATH:$HOME/go/bin
 PATH=$PATH:/opt/homebrew/bin
+PATH=$PATH:/usr/local/bin
 # BUN_INSTALL="$HOME/.bun"
 # PATH="$BUN_INSTALL/bin:$PATH"
 
