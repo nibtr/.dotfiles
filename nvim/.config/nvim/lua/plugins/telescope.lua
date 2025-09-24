@@ -106,6 +106,12 @@ return {
     map('<leader>fh', builtin.help_tags, '[F]ind [H]elp')
     map('<leader>fk', builtin.keymaps, '[F]ind [K]eymaps')
     map('<leader>ff', builtin.find_files, '[F]ind [F]iles')
+    map('<leader>fa', function()
+      builtin.find_files({
+        hidden = true,
+        no_ignore = true,
+      })
+    end, '[F]ind [A]ll')
     map('<leader>fs', builtin.lsp_document_symbols, '[F]ind [S]ymbol')
     map('<leader>fw', builtin.grep_string, '[F]ind current [W]ord')
     map('<leader>fg', builtin.live_grep, '[F]ind by [G]rep')
@@ -125,7 +131,7 @@ return {
     map('<leader>th', builtin.colorscheme, '[TH]eme Switcher')
 
     -- find plugin packages
-    map("<space>fa", function()
+    map("<space>fA", function()
       ---@diagnostic disable-next-line: param-type-mismatch
       builtin.find_files { cwd = vim.fs.joinpath(vim.fn.stdpath "data", "lazy") }
     end, "[F]ind Plugin P[a]ckage")

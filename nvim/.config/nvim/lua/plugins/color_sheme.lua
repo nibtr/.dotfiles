@@ -103,4 +103,26 @@ return {
       end,
     },
   },
+  {
+    'shaunsingh/nord.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.nord_contrast = true
+      vim.g.nord_borders = true
+      vim.g.nord_italic = false
+      vim.g.nord_disable_background = false
+      vim.g.nord_cursorline_transparent = false
+      vim.g.nord_enable_sidebar_background = true
+
+      require("nord").set()
+    end
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim"
+    -- Add in any other configuration;
+    --   event = foo,
+    --   config = bar
+    --   end,
+  }
 }
