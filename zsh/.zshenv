@@ -24,19 +24,6 @@ export LS_COLORS
 . "$HOME/.cargo/env"
 
 # fzf
-# FZF_COLORS="bg+:-1,\
-# fg:gray,\
-# fg+:white,\
-# border:gray,\
-# spinner:0,\
-# hl:yellow,\
-# header:blue,\
-# info:green,\
-# pointer:red,\
-# marker:blue,\
-# prompt:gray,\
-# hl+:red"
-
 # export FZF_DEFAULT_OPTS="--height 75% \
 # --border sharp \
 # --layout reverse \
@@ -44,6 +31,26 @@ export LS_COLORS
 # --prompt '∷ ' \
 # --pointer ▶ \
 # --marker ⇒"
+export FZF_DEFAULT_OPTS="
+    --height=99%
+    --layout=reverse
+    --pointer='█'
+    --scrollbar='▌'
+    --highlight-line
+    --color=hl:#f3be7c
+    --color=bg:-1
+    --color=gutter:-1
+    --color=bg+:#252530
+    --color=fg+:#aeaed1
+    --color=hl+:#f3be7c
+    --color=border:#606079
+    --color=prompt:#bb9dbd
+    --color=query:#aeaed1:bold
+    --color=pointer:#aeaed1
+    --color=scrollbar:#aeaed1
+    --color=info:#f3be7c
+    --color=spinner:#7fa563
+    "
 
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --strip-cwd-prefix --exclude .git .node_modules'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"

@@ -1,17 +1,17 @@
 return {
-  -- {
-  --   'rose-pine/neovim',
-  --   name = 'rose-pine',
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     variant = 'moon',
-  --     styles = {
-  --       italic = false,
-  --       transparency = true,
-  --     },
-  --   },
-  -- },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    lazy = false,
+    priority = 1000,
+    opts = {
+      variant = 'moon',
+      styles = {
+        italic = false,
+        transparency = true,
+      },
+    },
+  },
   -- {
   --   'folke/tokyonight.nvim',
   --   lazy = false,
@@ -20,13 +20,13 @@ return {
   --     style = 'moon',
   --   },
   -- },
-  {
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    -- lazy = false,
-    -- priority = 1000,
-    opts = {},
-  },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   -- lazy = false,
+  --   -- priority = 1000,
+  --   opts = {},
+  -- },
   {
     'ellisonleao/gruvbox.nvim',
     lazy = false,
@@ -119,10 +119,12 @@ return {
     end
   },
   {
-    "nyoom-engineering/oxocarbon.nvim"
-    -- Add in any other configuration;
-    --   event = foo,
-    --   config = bar
-    --   end,
-  }
+    "vague2k/vague.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+      italic = false,
+      -- transparent = true,
+    }
+  },
 }
