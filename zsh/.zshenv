@@ -77,6 +77,9 @@ export JAVA_HOME="$HOME/.local/share/java"
 # maven
 export MAVEN_HOME="$HOME/.local/share/maven"
 
+# bake - Makefile formatter
+export BAKE_HOME="$HOME/bake"
+
 # PATH
 PATH=$PATH:$HOME/.local/bin
 PATH=$PATH:/usr/local/go/bin
@@ -86,6 +89,7 @@ PATH=$PATH:$HOME/go/bin
 # PATH="$BUN_INSTALL/bin:$PATH"
 PATH=$JAVA_HOME/bin:$PATH
 PATH=$MAVEN_HOME/bin:$PATH
+PATH=$BAKE_HOME/bin:$PATH
 
 # place this at bottom of PATH
 export PATH=$(echo $PATH | tr ':' '\n' | awk '!x[$0]++' | paste -sd':' -)

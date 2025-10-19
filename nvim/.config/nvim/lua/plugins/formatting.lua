@@ -50,6 +50,8 @@ return {
         cpp = { "clang_format" },
         java = { "google-java-format" },
         ocaml = { "ocamlformat" },
+        make = { "bake" },
+        makefile = { "bake" },
         -- Use the "*" filetype to run formatters on all filetypes.
         ["*"] = { "codespell" },
         -- Use the "_" filetype to run formatters on filetypes that don't
