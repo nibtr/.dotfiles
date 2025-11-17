@@ -54,6 +54,8 @@ vim.keymap.set("n", "<leader>d", "<cmd>bd!<CR>") -- delete buffer
 -- resize buffer
 vim.keymap.set("n", "<C-S-Left>", "<cmd>vertical resize +3<CR>")
 vim.keymap.set("n", "<C-S-Right>", "<cmd>vertical resize -3<CR>")
+vim.keymap.set("n", "<C-S-Up>", "<cmd>horizontal resize +3<CR>")
+vim.keymap.set("n", "<C-S-Down>", "<cmd>horizontal resize -3<CR>")
 --
 -- Easily hit escape in terminal mode.
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")

@@ -3,6 +3,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"   # Zsh env
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Zinit plugin manager
 export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
@@ -33,8 +35,7 @@ PATH=$PATH:/usr/local/go/bin
 PATH=$PATH:$HOME/go/bin
 PATH=$PATH:/opt/homebrew/bin
 PATH=$PATH:/usr/local/bin
-# BUN_INSTALL="$HOME/.bun"
-# PATH="$BUN_INSTALL/bin:$PATH"
+PATH=$HOME/.bun/bin:$PATH
 
 # place this at bottom of PATH
 export PATH=$(echo $PATH | tr ':' '\n' | awk '!x[$0]++' | paste -sd':' -)

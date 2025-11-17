@@ -97,6 +97,12 @@ return {
 			vim.keymap.set("n", keys, func, { desc = desc })
 		end
 
+		map("<leader>fa", function()
+			builtin.find_files({
+				hidden = true,
+				no_ignore = true,
+			})
+		end, "[F]ind [A]ll")
 		map("<leader>fc", builtin.commands, "[F]ind [C]ommands")
 		map("<leader>fh", builtin.help_tags, "[F]ind [H]elp")
 		map("<leader>fk", builtin.keymaps, "[F]ind [K]eymaps")

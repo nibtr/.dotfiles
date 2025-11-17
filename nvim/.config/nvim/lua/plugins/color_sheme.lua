@@ -1,12 +1,11 @@
 return {
-	{ "bluz71/vim-moonfly-colors", name = "moonfly" },
 	{
 		"ellisonleao/gruvbox.nvim",
-		lazy = false,
+		-- lazy = true,
 		priority = 1000,
 		name = "gruvbox",
 		opts = {
-			--transparent_mode = true,
+			-- transparent_mode = true,
 			contrast = "hard",
 			bold = false,
 			italic = {
@@ -23,8 +22,8 @@ return {
 	},
 	{
 		"rebelot/kanagawa.nvim",
-		-- lazy = false,
-		-- priority = 1000,
+		lazy = false,
+		priority = 1000,
 		opts = {
 			compile = true,
 			commentStyle = { italic = false },
@@ -75,10 +74,14 @@ return {
 			end,
 		},
 	},
-
 	{
-		"scottmckendry/cyberdream.nvim",
+		"vague2k/vague.nvim",
 		lazy = false,
 		priority = 1000,
-	},
+		opts = {
+			italic = false,
+			bold = false,
+			-- transparent = true,
+		}
+	}
 }

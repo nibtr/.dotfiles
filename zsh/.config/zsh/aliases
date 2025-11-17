@@ -50,7 +50,7 @@ alias tmd='tmux detach'
 
 # go
 alias gob="go build"
-alias gor="go run" 
+alias gor="go run"
 alias goc="go clean -i"
 #alias gta="go test ./..."       # go test all
 alias gi="go install"    # go install all
@@ -99,6 +99,6 @@ alias fonts='fc-cache -f -v'
 alias printpath='echo $PATH | tr ":" "\\n"'
 alias history='history | fzf'
 alias fe='thunar'
-alias open='xdg-open'
+# alias open='xdg-open'
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
