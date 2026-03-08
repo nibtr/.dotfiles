@@ -4,22 +4,22 @@
 shell = { program = "/bin/zsh" }
 
 [window]
-opacity = 0.95
+opacity = 1.0
 startup_mode = "Maximized"
-padding = { x = 12, y = 4 }
+padding = { x = 4, y = 4 }
 decorations_theme_variant = "Dark"
 
 [scrolling]
 multiplier = 5
 
-# [colors.primary]
-# background = "#181818"
+[colors.primary]
+background = "#181818"
 
 [font]
-# normal = { family = "HackNerd Font", style = "Regular" }
-# normal = { family = "JetBrains Mono", style = "Regular" }
-normal = { family = "Iosevka Nerd Font", style = "Regular" }
-size = 12
+#normal = { family = "HackNerd Font", style = "Regular" }
+normal = { family = "JetBrains Mono", style = "Regular" }
+#normal = { family = "Iosevka Nerd Font", style = "Regular" }
+size = 11.5
 offset = { x = 0, y = 0}
 
 [env]
@@ -30,44 +30,3 @@ bindings = [
   {key = "PageUp", action = "ScrollLineUp"},
   {key = "PageDown", action = "ScrollLineDown"},
 ]
-
-# Vague theme
-[colors.primary]
-background = '#141415'
-foreground = '#cdcdcd'
-
-[colors.normal]
-black = '#252530'
-red = '#d8647e'
-green = '#7fa563'
-yellow = '#f3be7c'
-blue = '#6e94b2'
-magenta = '#bb9dbd'
-cyan = '#aeaed1'
-white = '#cdcdcd'
-
-[colors.bright]
-black = '#606079'
-red = '#e08398'
-green = '#99b782'
-yellow = '#f5cb96'
-blue = '#8ba9c1'
-magenta = '#c9b1ca'
-cyan = '#bebeda'
-white = '#d7d7d7'
-
-[colors.hints.start]
-foreground = "CellBackground"
-background = "CellForeground"
-
-[colors.hints.end]
-foreground = "CellBackground"
-background = "CellForeground"
-
-[colors.search.matches]
-foreground = "CellBackground"
-background = "CellForeground"
-
-[colors.search.focused_match]
-foreground = "CellBackground"
-background = '#f3be7c'

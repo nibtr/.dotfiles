@@ -1,39 +1,12 @@
 return {
   {
-    'rose-pine/neovim',
-    name = 'rose-pine',
-    lazy = false,
-    priority = 1000,
-    opts = {
-      variant = 'moon',
-      styles = {
-        italic = false,
-        transparency = true,
-      },
-    },
-  },
-  -- {
-  --   'folke/tokyonight.nvim',
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = {
-  --     style = 'moon',
-  --   },
-  -- },
-  -- {
-  --   'catppuccin/nvim',
-  --   name = 'catppuccin',
-  --   -- lazy = false,
-  --   -- priority = 1000,
-  --   opts = {},
-  -- },
-  {
     'ellisonleao/gruvbox.nvim',
     lazy = false,
     name = 'gruvbox',
     priority = 1000,
     opts = {
       -- transparent_mode = true,
+      underline = true,
       contrast = 'hard',
       bold = false,
       italic = {
@@ -48,16 +21,6 @@ return {
       },
     },
   },
-  -- {
-  --   "ayu-theme/ayu-vim",
-  --   lazy = false,
-  --   priority = 1000,
-  -- },
-  -- {
-  --   "Mofiqul/adwaita.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  -- },
   {
     "rebelot/kanagawa.nvim",
     lazy = false,
@@ -104,27 +67,8 @@ return {
     },
   },
   {
-    'shaunsingh/nord.nvim',
+    "RRethy/base16-nvim",
     lazy = false,
     priority = 1000,
-    config = function()
-      vim.g.nord_contrast = true
-      vim.g.nord_borders = true
-      vim.g.nord_italic = false
-      vim.g.nord_disable_background = false
-      vim.g.nord_cursorline_transparent = false
-      vim.g.nord_enable_sidebar_background = true
-
-      require("nord").set()
-    end
-  },
-  {
-    "vague2k/vague.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {
-      italic = false,
-      -- transparent = true,
-    }
   },
 }

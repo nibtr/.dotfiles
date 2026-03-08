@@ -1,6 +1,6 @@
 -- colorscheme
--- vim.cmd.colorscheme("kanagawa")
-vim.cmd.colorscheme("vague")
+--vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("base16-gruvbox-dark-hard")
 
 -- enable inline virtual diagnostic
 -- vim.diagnostic.config({ virtual_text = true })
