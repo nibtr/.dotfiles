@@ -59,9 +59,9 @@ vim.keymap.set('n', '/', '/\\v')
 vim.keymap.set('c', '%s/', '%sm/')
 
 -- remap buffers
-vim.keymap.set('n', '<Tab>', '<cmd>bnext<CR>')       -- next buffer
-vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<CR>') -- previous buffer
-vim.keymap.set('n', '<leader>d', '<cmd>bd!<CR>')     -- delete buffer
+vim.keymap.set('n', ']b', '<cmd>bnext<CR>')      -- next buffer
+vim.keymap.set('n', '[b', '<cmd>bprevious<CR>')  -- previous buffer
+vim.keymap.set('n', '<leader>d', '<cmd>bd!<CR>') -- delete buffer
 
 -- resize buffer
 vim.keymap.set('n', '<C-S-Left>', '<cmd>vertical resize +3<CR>')
