@@ -57,25 +57,16 @@ return {
   },
 
   -- autotags
-  {
-    'windwp/nvim-ts-autotag',
-    event = 'InsertEnter',
-    config = function()
-      require('nvim-treesitter.configs').setup({
-        autotag = {
-          enable = true,
-        },
-      })
-    end,
-  },
-
-  -- markdown preview
   -- {
-  --   'iamcco/markdown-preview.nvim',
-  --   cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
-  --   ft = { 'markdown' },
-  --   build = function()
-  --     vim.fn['mkdp#util#install']()
+  --   'windwp/nvim-ts-autotag',
+  --   event = 'InsertEnter',
+  --   config = function()
+  --     require('nvim-treesitter.configs').setup({
+  --       autotag = {
+  --         enable = true,
+  --       },
+  --       auto_install
+  --     })
   --   end,
   -- },
 }

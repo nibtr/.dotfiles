@@ -5,20 +5,23 @@ return {
     name = 'gruvbox',
     priority = 1000,
     opts = {
+      terminal_color = true,
       -- transparent_mode = true,
       underline = true,
+      undercurl = true,
       contrast = 'hard',
-      bold = false,
+      bold = true,
       italic = {
         strings = false,
-        emphasis = false,
-        comments = false,
+        emphasis = true,
+        comments = true,
         operators = false,
         folds = false,
       },
       overrides = {
         LspReferenceRead = { bg = "#504945" },
       },
+      inverse = true,
     },
   },
   {
@@ -65,10 +68,5 @@ return {
         }
       end,
     },
-  },
-  {
-    "RRethy/base16-nvim",
-    lazy = false,
-    priority = 1000,
   },
 }
