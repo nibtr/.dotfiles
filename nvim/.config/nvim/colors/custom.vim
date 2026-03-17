@@ -23,7 +23,7 @@ let s:red     = ["#ff5f5f", "203"]
 let s:yellow  = ["#e4c27a", "180"]
 let s:cyan    = ["#8fbf9f", "108"]
 let s:brown   = ["#af875f", "137"]
-let s:comment = ["#7a6f5a", "243"]
+let s:comment = ["#7c7c7c", "243"]
 
 let s:bold      = "bold"
 let s:italic    = "italic"
@@ -89,7 +89,7 @@ call s:hl("PmenuSel",      { "fg": s:black, "bg": s:yellow })
 call s:hl("PmenuSbar",     { "bg": s:bg_ui })
 call s:hl("PmenuThumb",    { "bg": s:bg_alt })
 
-call s:hl("Visual",        { "bg": s:bg_ui })
+call s:hl("Visual",        { "bg": s:bg_diff })
 call s:hl("MatchParen",    { "bg": s:bg_ui })
 
 call s:hl("FoldColumn",     { "fg": s:comment, "bg": s:black })
@@ -197,3 +197,10 @@ call s:hl("MiniStatuslineModeVisual",  { "fg": s:black, "bg": s:cyan,   "style":
 call s:hl("MiniStatuslineModeReplace", { "fg": s:black, "bg": s:red,    "style": s:bold })
 call s:hl("MiniStatuslineModeCommand", { "fg": s:black, "bg": s:brown,  "style": s:bold })
 call s:hl("MiniStatuslineInactive",    { "fg": s:comment, "bg": s:bg_ui })
+
+" ======================
+" LSP reference highlights
+" ======================
+call s:hl("LspReferenceText",  { "bg": ["#4a4a4a", "239"] })
+call s:hl("LspReferenceRead",  { "bg": ["#4a4a4a", "239"] })
+call s:hl("LspReferenceWrite", { "bg": ["#4a4a4a", "239"] })
