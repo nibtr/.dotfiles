@@ -84,5 +84,4 @@ return {
 			-- transparent = true,
 		}
 	},
-	{ "silentium-theme/silentium.nvim" }
 }

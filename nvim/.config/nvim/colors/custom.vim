@@ -188,3 +188,12 @@ call s:hl("Question",      { "fg": s:blue })
 call s:hl("GitSignsAdd",    { "fg": s:green })
 call s:hl("GitSignsChange", { "fg": s:yellow })
 call s:hl("GitSignsDelete", { "fg": s:red })
+
+" mini.statusline
+call s:hl("MiniStatuslineFilename", { "fg": s:white, "bg": s:bg_ui })
+call s:hl("MiniStatuslineModeNormal",  { "fg": s:black, "bg": s:yellow, "style": s:bold })
+call s:hl("MiniStatuslineModeInsert",  { "fg": s:black, "bg": s:green,  "style": s:bold })
+call s:hl("MiniStatuslineModeVisual",  { "fg": s:black, "bg": s:cyan,   "style": s:bold })
+call s:hl("MiniStatuslineModeReplace", { "fg": s:black, "bg": s:red,    "style": s:bold })
+call s:hl("MiniStatuslineModeCommand", { "fg": s:black, "bg": s:brown,  "style": s:bold })
+call s:hl("MiniStatuslineInactive",    { "fg": s:comment, "bg": s:bg_ui })
