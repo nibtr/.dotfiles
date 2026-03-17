@@ -22,6 +22,9 @@ LS_COLORS=$LS_COLORS:'di=1;34:'
 LS_COLORS=$LS_COLORS:'ln=0;33:'
 export LS_COLORS
 
+# time
+export TIMEFMT=$'\n──────────────────────────────\nExecuted in %E\nusr time %U\nsys time %S'
+
 # Cargo
 . "$HOME/.cargo/env"
 

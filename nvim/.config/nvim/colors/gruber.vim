@@ -14,7 +14,7 @@ let s:cyan   = ["#afd7af", "151"]
 let s:gray   = ["#262626", "235"]
 let s:green  = ["#87d75f", "113"]
 let s:red    = ["#ff5f5f", "203"]
-let s:white  = ["#e4e4e4", "254"]
+let s:white  = ["#e1e1e1", "254"]
 let s:yellow = ["#ffd700", "220"]
 
 let s:bold      = "bold"
@@ -105,3 +105,8 @@ call s:hl("WildMenu",       { "fg": s:black, "bg": s:yellow, "style": s:bold })
 call s:hl("diffAdded",      { "fg": s:green })
 call s:hl("diffRemoved",    { "fg": s:red })
 call s:hl("diffSubname",    { "fg": s:blue })
+
+" treesitter
+call s:hl("@type",          { "fg": s:yellow })
+call s:hl("@type.builtin",  { "fg": s:yellow, "style": s:bold })
+call s:hl("@type.definition", { "fg": s:yellow })

@@ -8,9 +8,9 @@ vim.g.have_nerd_font = true
 -- netrw
 vim.g.netrw_banner = 0
 vim.g.netrw_browse_split = 4 -- open in prior window
-vim.g.netrw_liststyle = 3 -- tree view
+vim.g.netrw_liststyle = 3    -- tree view
 
-vim.opt.wrap = false -- disable text wrapping
+vim.opt.wrap = false         -- disable text wrapping
 
 -- Set tabs to 2 spaces
 vim.opt.tabstop = 2
@@ -67,7 +67,7 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.showmode = false
 
--- vim.o.winborder = "single"
+vim.o.winborder = "rounded"
 
 -- Sync system clipboard
 -- vim.opt.clipboard = 'unnamedplus'

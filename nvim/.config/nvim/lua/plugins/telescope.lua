@@ -117,6 +117,12 @@ return {
 		map("<leader>fB", builtin.builtin, "[F]ind [B]uiltin")
 		map("<leader>th", builtin.colorscheme, "[TH]eme Switcher")
 
+		map("<leader>fi", function()
+			local dir = vim.fn.input("Dir: ", vim.fn.getcwd() .. "/", "dir")
+			if dir == "" then return end
+			builtin.find_files({ cwd = dir })
+		end, "Find files [I]n directory")
+
 		map("<leader>gf", builtin.git_files, "[G]it [F]iles")
 		map("<leader>gb", builtin.git_bcommits, "[G]it [B]uffer Commits")
 		map("<leader>gc", builtin.git_commits, "[G]it [C]ommits")

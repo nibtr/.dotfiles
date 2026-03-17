@@ -10,7 +10,7 @@ return {
 			bold = false,
 			italic = {
 				strings = false,
-				emphasis = false,
+				emphasis = true,
 				comments = false,
 				operators = false,
 				folds = false,
@@ -83,5 +83,6 @@ return {
 			bold = false,
 			-- transparent = true,
 		}
-	}
+	},
+	{ "silentium-theme/silentium.nvim" }
 }
