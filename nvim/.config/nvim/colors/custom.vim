@@ -23,7 +23,8 @@ let s:red     = ["#ff5f5f", "203"]
 let s:yellow  = ["#e4c27a", "180"]
 let s:cyan    = ["#8fbf9f", "108"]
 let s:brown   = ["#af875f", "137"]
-let s:comment = ["#7c7c7c", "243"]
+let s:gray    = ["#7c7c7c", "243"]
+let s:visual  = ["#505050", "240"]
 
 let s:bold      = "bold"
 let s:italic    = "italic"
@@ -75,25 +76,25 @@ call s:hl("ColorColumn",   { "bg": s:bg_ui })
 " float / hover popup
 call s:hl("NormalFloat", { "fg": s:white, "bg": s:bg_ui })
 
-call s:hl("LineNr",        { "fg": s:comment })
+call s:hl("LineNr",        { "fg": s:gray })
 call s:hl("CursorLineNr",  { "fg": s:yellow })
 
 call s:hl("WinSeparator", { "fg": s:bg_ui })
 call s:hl("EndOfBuffer",   { "fg": s:black })
 
 call s:hl("StatusLine",    { "fg": s:white, "bg": s:bg_ui, "style": s:bold })
-call s:hl("StatusLineNC",  { "fg": s:comment, "bg": s:bg_ui })
+call s:hl("StatusLineNC",  { "fg": s:gray, "bg": s:bg_ui })
 
 call s:hl("Pmenu",         { "fg": s:white, "bg": s:bg_ui })
 call s:hl("PmenuSel",      { "fg": s:black, "bg": s:yellow })
 call s:hl("PmenuSbar",     { "bg": s:bg_ui })
 call s:hl("PmenuThumb",    { "bg": s:bg_alt })
 
-call s:hl("Visual",        { "bg": s:bg_diff })
+call s:hl("Visual",        { "bg": s:visual })
 call s:hl("MatchParen",    { "bg": s:bg_ui })
 
-call s:hl("FoldColumn",     { "fg": s:comment, "bg": s:black })
-call s:hl("Folded",         { "fg": s:comment, "bg": s:bg_alt })
+call s:hl("FoldColumn",     { "fg": s:gray, "bg": s:black })
+call s:hl("Folded",         { "fg": s:gray, "bg": s:bg_alt })
 
 call s:hl("Search",    { "fg": s:black, "bg": s:yellow })
 call s:hl("IncSearch", { "fg": s:black, "bg": s:brown })
@@ -102,7 +103,7 @@ call s:hl("CurSearch", { "fg": s:black, "bg": s:yellow })
 " ======================
 " syntax
 " ======================
-call s:hl("Comment",       { "fg": s:comment })
+call s:hl("Comment",       { "fg": s:brown })
 
 call s:hl("Constant",      { "fg": s:cyan })
 call s:hl("String",        { "fg": s:green })
@@ -142,7 +143,7 @@ call s:hl("SpellRare",     { "style": s:underline })
 " ======================
 " treesitter
 " ======================
-call s:hl("@comment",      { "fg": s:comment })
+call s:hl("@comment",      { "fg": s:brown })
 
 call s:hl("@string",       { "fg": s:green })
 call s:hl("@constant",     { "fg": s:cyan })
@@ -150,7 +151,7 @@ call s:hl("@constant",     { "fg": s:cyan })
 call s:hl("@function",     { "fg": s:blue })
 call s:hl("@function.method", { "fg": s:blue })
 
-call s:hl("@keyword",      { "fg": s:white })
+call s:hl("@keyword",      { "fg": s:yellow })
 call s:hl("@conditional",  { "fg": s:white })
 call s:hl("@repeat",       { "fg": s:white })
 
@@ -177,7 +178,7 @@ call s:hl("TelescopeSelection", { "fg": s:white, "bg": s:bg_ui })
 call s:hl("DiagnosticError", { "fg": s:red })
 call s:hl("DiagnosticWarn",  { "fg": s:yellow })
 call s:hl("DiagnosticInfo",  { "fg": s:blue })
-call s:hl("DiagnosticHint",  { "fg": s:comment })
+call s:hl("DiagnosticHint",  { "fg": s:gray })
 call s:hl("Error",         { "fg": s:red })
 call s:hl("ErrorMsg",      { "fg": s:red })
 call s:hl("WarningMsg",    { "fg": s:yellow })
@@ -196,7 +197,7 @@ call s:hl("MiniStatuslineModeInsert",  { "fg": s:black, "bg": s:green,  "style":
 call s:hl("MiniStatuslineModeVisual",  { "fg": s:black, "bg": s:cyan,   "style": s:bold })
 call s:hl("MiniStatuslineModeReplace", { "fg": s:black, "bg": s:red,    "style": s:bold })
 call s:hl("MiniStatuslineModeCommand", { "fg": s:black, "bg": s:brown,  "style": s:bold })
-call s:hl("MiniStatuslineInactive",    { "fg": s:comment, "bg": s:bg_ui })
+call s:hl("MiniStatuslineInactive",    { "fg": s:gray, "bg": s:bg_ui })
 
 " ======================
 " LSP reference highlights

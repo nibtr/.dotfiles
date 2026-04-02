@@ -95,7 +95,6 @@ return {
         clangd = {},
         pyright = {},
         gopls = {},
-        ocamllsp = {},
         rust_analyzer = {
           settings = {
             ['rust-analyzer'] = {
@@ -115,14 +114,12 @@ return {
             },
           },
         },
-        templ = {},
         marksman = {},
         ts_ls = {},
         emmet_ls = {},
         eslint = {},
         bashls = {},
         zls = {},
-        jdtls = {},
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},
