@@ -1,6 +1,13 @@
 # Neovim Setup
 
-![image](https://github.com/user-attachments/assets/908ad0cb-1b33-4784-afa0-50177a5a3f17)
+My custom nvim setup. You'll likely want to change it up to fit your
+needs.
+
+## Prerequisites
+
+- nvim 0.12 (latest release).
+- rust to setup `nvim-treesitter`.More details [here](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md).
+- [ripgrep](https://github.com/burntsushi/ripgrep), for telescope.
 
 ## Main plugins
 
@@ -11,4 +18,3 @@
 - gitsigns
 - conform (formatting)
 - nvim-cmp (completion)
-- colorscheme is gruber
