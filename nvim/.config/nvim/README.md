@@ -6,7 +6,8 @@ needs.
 ## Prerequisites
 
 - nvim 0.12 (latest release).
-- rust to setup `nvim-treesitter`.More details [here](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md).
+- rust to install `tree-sitter-cli`, necessary to setup `nvim-treesitter`.
+More details [here](https://github.com/tree-sitter/tree-sitter/blob/master/crates/cli/README.md).
 - [ripgrep](https://github.com/burntsushi/ripgrep), for telescope.
 
 ## Main plugins
